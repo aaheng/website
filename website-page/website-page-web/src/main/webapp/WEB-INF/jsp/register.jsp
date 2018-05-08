@@ -92,7 +92,11 @@
 <script type="text/javascript" src="/framework/jquery.min.js"></script>
 <script src="/layui/layui.js"></script>
 <script src="/js/website/user/upload.js"/>
+<script>
+    /*$(document).ready(function () {
 
+    });*/
+</script>
 </body>
 
 </html>

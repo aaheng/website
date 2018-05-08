@@ -2,266 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9cdda57-d0c7-42d6-a7e2-7915960f16d0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../.gitattributes" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/artifacts/website_page_web_war.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/artifacts/website_page_web_war_exploded.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/dictionaries/aheng.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/graduation.iml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Java_EE_6_Java_EE_6.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__com_alibaba_druid_1_0_9.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__com_alibaba_fastjson_1_2_13.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_4_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_4_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_4_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_0_9.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__com_github_pagehelper_pagehelper_3_4_2_fix.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_3_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__commons_io_commons_io_1_3_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__commons_net_commons_net_3_3.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__javax_servlet_jsp_api_2_0.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__jstl_jstl_1_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__junit_junit_4_11.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__log4j_log4j_1_2_16.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__mysql_mysql_connector_java_5_1_32.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__net_coobird_thumbnailator_0_4_8.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_apache_commons_commons_lang3_3_1.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_apache_commons_commons_pool2_2_3.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_7.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_mybatis_mybatis_3_2_8.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_mybatis_mybatis_spring_1_2_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_4.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_6_4.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_aop_4_2_4_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_aspects_4_2_4_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_beans_4_2_4_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_context_4_2_4_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_context_support_4_2_4_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_core_4_2_4_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_expression_4_2_4_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_jdbc_4_2_4_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_jms_4_2_4_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_messaging_4_2_4_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_tx_4_2_4_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_web_4_2_4_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_springframework_spring_webmvc_4_2_4_RELEASE.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__redis_clients_jedis_2_7_2.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../lib/javax.annotation.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../lib/javax.ejb.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../lib/javax.jms.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../lib/javax.persistence.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../lib/javax.resource.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../lib/javax.servlet.jsp.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../lib/javax.servlet.jsp.jstl.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../lib/javax.transaction.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../website-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/../website-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/../website-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/../website-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/../website-common/website-common.iml" afterPath="$PROJECT_DIR$/../website-common/website-common.iml" />
-      <change beforePath="$PROJECT_DIR$/../website-page-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/../website-page-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/../website-page-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/../website-page-pojo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/../website-page-pojo/website-page-pojo.iml" afterPath="$PROJECT_DIR$/../website-page-pojo/website-page-pojo.iml" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-dao/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/../website-page/website-page-dao/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-dao/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/../website-page/website-page-dao/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-dao/website-page-dao.iml" afterPath="$PROJECT_DIR$/../website-page/website-page-dao/website-page-dao.iml" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/../website-page/website-page-service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/../website-page/website-page-service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-service/website-page-service.iml" afterPath="$PROJECT_DIR$/../website-page/website-page-service/website-page-service.iml" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/login/LoginController.java" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/login/LoginController.java" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/resources/mybatis/mapper/LoginTokenMapper.xml" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/resources/mybatis/mapper/LoginTokenMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/UploadPic/1be5df1fa9414170b87a26e3c19abd3e.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/UploadPic/21b23fbedaa6401081d18db40e600051.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/UploadPic/26794e369eae481f9e48f64b2262fe57.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/UploadPic/35264bf7fc59446d97b729824a55e6cb.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/UploadPic/36da173267b24f628d0890acf6fe97ec.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/UploadPic/379bb9fabe6e4ab193c4f3fde4532b22.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/UploadPic/4cc2e58d306b4de0becf90aecc6764c7.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/UploadPic/531797ea18274d938ae4972af46a2f80.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/UploadPic/5609e1b5165541af941c0736f3fdda82.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/UploadPic/583f367fca30498d9b5701100a462d6b.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/UploadPic/61859a95a88b4875896b41a89aa39da2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/UploadPic/68acd6c5c6d94876af5125a32bda0085.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/UploadPic/7b4672bcd0674102b84ec4b84ef517ce.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/UploadPic/8724b908e4be43c89a8d7c7700c6042d.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/UploadPic/98ab53ed14c04d5cba3774fdadd9797e.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/UploadPic/a7d90bf5efb34c7fadd0b5a3b6cc5c50.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/UploadPic/c2ad7a4214b24d0395bae1f1b2b5b7ea.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/UploadPic/fd8aa58bd4a542daa8d63f2cb9de00fb.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/UploadPic/thumbnail/1be5df1fa9414170b87a26e3c19abd3e_thumbnail.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/UploadPic/thumbnail/21b23fbedaa6401081d18db40e600051_thumbnail.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/UploadPic/thumbnail/26794e369eae481f9e48f64b2262fe57_thumbnail.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/UploadPic/thumbnail/35264bf7fc59446d97b729824a55e6cb_thumbnail.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/UploadPic/thumbnail/379bb9fabe6e4ab193c4f3fde4532b22_thumbnail.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/UploadPic/thumbnail/4cc2e58d306b4de0becf90aecc6764c7_thumbnail.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/UploadPic/thumbnail/531797ea18274d938ae4972af46a2f80_thumbnail.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/UploadPic/thumbnail/5609e1b5165541af941c0736f3fdda82_thumbnail.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/UploadPic/thumbnail/583f367fca30498d9b5701100a462d6b_thumbnail.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/UploadPic/thumbnail/61859a95a88b4875896b41a89aa39da2_thumbnail.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/UploadPic/thumbnail/68acd6c5c6d94876af5125a32bda0085_thumbnail.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/UploadPic/thumbnail/7b4672bcd0674102b84ec4b84ef517ce_thumbnail.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/UploadPic/thumbnail/8724b908e4be43c89a8d7c7700c6042d_thumbnail.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/UploadPic/thumbnail/98ab53ed14c04d5cba3774fdadd9797e_thumbnail.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/UploadPic/thumbnail/a7d90bf5efb34c7fadd0b5a3b6cc5c50_thumbnail.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/UploadPic/thumbnail/c2ad7a4214b24d0395bae1f1b2b5b7ea_thumbnail.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/UploadPic/thumbnail/fd8aa58bd4a542daa8d63f2cb9de00fb_thumbnail.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/login.jsp" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/login.jsp" />
       <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/register.jsp" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/register.jsp" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/css/blue-skin5152.css" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/css/blue-skin5152.css" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/css/bootstrap5152.css" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/css/bootstrap5152.css" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/css/custom5152.html" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/css/custom5152.html" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/css/green-skin5152.css" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/css/green-skin5152.css" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/css/main5152.css" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/css/main5152.css" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/css/red-skin5152.css" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/css/red-skin5152.css" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/css/responsive5152.css" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/css/responsive5152.css" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/css/video/owl.carousel.css" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/css/video/owl.carousel.css" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/css/video/owl.theme.css" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/css/video/owl.theme.css" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/css/font-awesome.css" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/css/font-awesome.css" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/css/font-awesome.min.css" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/fonts/fontawesome-webfont.svg" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/less/bordered-pulled.less" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/less/bordered-pulled.less" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/less/core.less" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/less/core.less" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/less/fixed-width.less" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/less/fixed-width.less" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/less/font-awesome.less" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/less/font-awesome.less" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/less/icons.less" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/less/icons.less" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/less/larger.less" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/less/larger.less" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/less/list.less" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/less/list.less" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/less/mixins.less" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/less/mixins.less" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/less/path.less" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/less/path.less" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/less/rotated-flipped.less" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/less/rotated-flipped.less" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/less/spinning.less" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/less/spinning.less" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/less/stacked.less" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/less/stacked.less" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/less/variables.less" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/less/variables.less" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/scss/_bordered-pulled.scss" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/scss/_bordered-pulled.scss" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/scss/_core.scss" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/scss/_core.scss" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/scss/_fixed-width.scss" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/scss/_fixed-width.scss" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/scss/_icons.scss" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/scss/_icons.scss" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/scss/_larger.scss" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/scss/_larger.scss" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/scss/_list.scss" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/scss/_list.scss" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/scss/_mixins.scss" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/scss/_mixins.scss" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/scss/_path.scss" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/scss/_path.scss" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/scss/_rotated-flipped.scss" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/scss/_rotated-flipped.scss" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/scss/_spinning.scss" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/scss/_spinning.scss" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/scss/_stacked.scss" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/scss/_stacked.scss" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/scss/_variables.scss" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/scss/_variables.scss" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/scss/font-awesome.scss" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/font-awesome/scss/font-awesome.scss" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/framework/highcharts.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/framework/highcharts.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/framework/lazyload/jquery.lazyload.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/framework/lazyload/jquery.lazyload.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/framework/lazyload/jquery.lazyload.min.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/framework/lazyload/jquery.lazyload.min.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/framework/lazyload/jquery.scrollstop.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/framework/lazyload/jquery.scrollstop.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/framework/lazyload/jquery.scrollstop.min.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/framework/lazyload/jquery.scrollstop.min.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/classie.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/classie.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/custom.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/custom.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/custom5152.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/custom5152.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/demo.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/demo.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/jflickrfeed.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/jflickrfeed.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/jquery-1.8.3.min.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/jquery-1.8.3.min.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/jquery-2.1.1.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/jquery-2.1.1.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/jquery.easing.1.3.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/jquery.easing.1.3.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/jquery.easing.1.34e44.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/jquery.easing.1.34e44.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/jquery.form.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/jquery.form.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/jquery.formd471.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/jquery.formd471.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/jquery.liveSearch.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/jquery.liveSearch.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/jquery.liveSearchd5f7.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/jquery.liveSearchd5f7.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/jquery.validate.min.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/jquery.validate.min.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/jquery.validate.minfc6b.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/jquery.validate.minfc6b.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/owl.carousel.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/owl.carousel.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/prettyphoto/jquery.prettyPhoto.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/prettyphoto/jquery.prettyPhoto.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/prettyphoto/jquery.prettyPhotoaeb9.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/prettyphoto/jquery.prettyPhotoaeb9.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/prettyphoto/prettyPhotoaeb9.css" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/prettyphoto/prettyPhotoaeb9.css" />
       <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/website/user/upload.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/website/user/upload.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/cn/website/controller/login/LoginController.class" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/cn/website/controller/login/LoginController.class" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/mybatis/mapper/LoginTokenMapper.xml" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/mybatis/mapper/LoginTokenMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/conf/logging.properties" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/conf/logging.properties" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/conf/tomcat-users.xml" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/conf/tomcat-users.xml" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/conf/web.xml" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/conf/web.xml" />
       <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/logs/access_log.2018-05-08" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/logs/access_log.2018-05-08" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/login_jsp.class" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/login_jsp.class" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/login_jsp.java" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/login_jsp.java" />
       <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/register_jsp.class" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/register_jsp.class" />
       <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/register_jsp.java" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/register_jsp.java" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/css/blue-skin5152.css" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/css/blue-skin5152.css" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/css/bootstrap5152.css" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/css/bootstrap5152.css" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/css/custom5152.html" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/css/custom5152.html" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/css/green-skin5152.css" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/css/green-skin5152.css" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/css/main5152.css" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/css/main5152.css" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/css/red-skin5152.css" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/css/red-skin5152.css" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/css/responsive5152.css" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/css/responsive5152.css" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/css/video/owl.carousel.css" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/css/video/owl.carousel.css" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/css/video/owl.theme.css" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/css/video/owl.theme.css" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/css/font-awesome.css" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/css/font-awesome.css" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/css/font-awesome.min.css" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/fonts/fontawesome-webfont.svg" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/less/bordered-pulled.less" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/less/bordered-pulled.less" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/less/core.less" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/less/core.less" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/less/fixed-width.less" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/less/fixed-width.less" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/less/font-awesome.less" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/less/font-awesome.less" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/less/icons.less" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/less/icons.less" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/less/larger.less" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/less/larger.less" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/less/list.less" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/less/list.less" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/less/mixins.less" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/less/mixins.less" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/less/path.less" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/less/path.less" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/less/rotated-flipped.less" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/less/rotated-flipped.less" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/less/spinning.less" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/less/spinning.less" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/less/stacked.less" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/less/stacked.less" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/less/variables.less" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/less/variables.less" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/scss/_bordered-pulled.scss" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/scss/_bordered-pulled.scss" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/scss/_core.scss" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/scss/_core.scss" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/scss/_fixed-width.scss" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/scss/_fixed-width.scss" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/scss/_icons.scss" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/scss/_icons.scss" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/scss/_larger.scss" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/scss/_larger.scss" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/scss/_list.scss" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/scss/_list.scss" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/scss/_mixins.scss" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/scss/_mixins.scss" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/scss/_path.scss" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/scss/_path.scss" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/scss/_rotated-flipped.scss" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/scss/_rotated-flipped.scss" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/scss/_spinning.scss" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/scss/_spinning.scss" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/scss/_stacked.scss" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/scss/_stacked.scss" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/scss/_variables.scss" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/scss/_variables.scss" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/scss/font-awesome.scss" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/font-awesome/scss/font-awesome.scss" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/framework/highcharts.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/framework/highcharts.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/framework/lazyload/jquery.lazyload.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/framework/lazyload/jquery.lazyload.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/framework/lazyload/jquery.lazyload.min.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/framework/lazyload/jquery.lazyload.min.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/framework/lazyload/jquery.scrollstop.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/framework/lazyload/jquery.scrollstop.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/framework/lazyload/jquery.scrollstop.min.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/framework/lazyload/jquery.scrollstop.min.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/classie.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/classie.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/custom.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/custom.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/custom5152.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/custom5152.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/demo.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/demo.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/jflickrfeed.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/jflickrfeed.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/jquery-1.8.3.min.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/jquery-1.8.3.min.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/jquery-2.1.1.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/jquery-2.1.1.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/jquery.easing.1.3.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/jquery.easing.1.3.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/jquery.easing.1.34e44.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/jquery.easing.1.34e44.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/jquery.form.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/jquery.form.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/jquery.formd471.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/jquery.formd471.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/jquery.liveSearch.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/jquery.liveSearch.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/jquery.liveSearchd5f7.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/jquery.liveSearchd5f7.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/jquery.validate.min.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/jquery.validate.min.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/jquery.validate.minfc6b.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/jquery.validate.minfc6b.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/owl.carousel.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/owl.carousel.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/prettyphoto/jquery.prettyPhoto.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/prettyphoto/jquery.prettyPhoto.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/prettyphoto/jquery.prettyPhotoaeb9.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/prettyphoto/jquery.prettyPhotoaeb9.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/prettyphoto/prettyPhotoaeb9.css" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/prettyphoto/prettyPhotoaeb9.css" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/website-page-web.iml" afterPath="$PROJECT_DIR$/../website-page/website-page-web/website-page-web.iml" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page.iml" afterPath="$PROJECT_DIR$/../website-page/website-page.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/website-parent.iml" afterPath="$PROJECT_DIR$/website-parent.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/../website-page-pojo/target/" />
@@ -277,12 +23,97 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="register.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/register.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="111">
+              <caret line="85" column="21" lean-forward="false" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addMessage.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/addMessage.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="57" column="35" lean-forward="false" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="35" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="upload.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/website/user/upload.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="34" column="7" lean-forward="false" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+              <folding>
+                <element signature="e#201#1306#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="comment.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/website/comment.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-276">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="discuss.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/website/discuss.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-441">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="upload.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/website/upload.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/website/test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/website/test.js" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/website/user/upload.js" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/register.jsp" />
+      </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -342,7 +173,9 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -365,7 +198,82 @@
           <expand>
             <path>
               <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="website-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="website-page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website-page" type="462c0819:PsiDirectoryNode" />
+              <item name="website-page-web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website-page" type="462c0819:PsiDirectoryNode" />
+              <item name="website-page-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website-page" type="462c0819:PsiDirectoryNode" />
+              <item name="website-page-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website-page" type="462c0819:PsiDirectoryNode" />
+              <item name="website-page-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website-page" type="462c0819:PsiDirectoryNode" />
+              <item name="website-page-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website-page" type="462c0819:PsiDirectoryNode" />
+              <item name="website-page-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website-page" type="462c0819:PsiDirectoryNode" />
+              <item name="website-page-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website-page" type="462c0819:PsiDirectoryNode" />
+              <item name="website-page-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website-page" type="462c0819:PsiDirectoryNode" />
+              <item name="website-page-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -384,6 +292,11 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\code\my\website\website-page\website-page-web\src\main\webapp\js\website" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -516,15 +429,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1525773662374</updated>
-      <workItem from="1525773663703" duration="95000" />
+      <workItem from="1525773663703" duration="1499000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95000" />
+    <option name="totallyTimeSpent" value="1499000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="24" y="20" width="1346" height="688" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -548,7 +462,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -556,6 +470,37 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2496112" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -564,8 +509,78 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/website/comment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-276">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/website/video.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/website/upload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/website/discuss.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-441">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/website/user/upload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="34" column="7" lean-forward="false" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+          <folding>
+            <element signature="e#201#1306#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/website/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/addMessage.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="57" column="35" lean-forward="false" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="85" column="21" lean-forward="false" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>

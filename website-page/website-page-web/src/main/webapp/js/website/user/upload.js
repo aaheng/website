@@ -35,7 +35,7 @@ layui.use(['upload', 'layer','form'], function () {
     });
 
     //监听提交
-    form.on('submit(registerBtn)', function (data) {
+    /*form.on('submit(registerBtn)', function (data) {
         var username = $("#username").val();
         var password = $("#password").val();
         var phone = $("#phone").val();
@@ -67,5 +67,5 @@ layui.use(['upload', 'layer','form'], function () {
             }
         });
         form.render();
-    });
+    });*/
 });
