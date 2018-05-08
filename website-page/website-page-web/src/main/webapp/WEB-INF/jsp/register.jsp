@@ -23,16 +23,16 @@
             <div class="layui-form-item">
                 <label class="layui-form-label">用户名</label>
                 <div class="layui-input-inline">
-                    <input type="text" id="username" required lay-verify="required" placeholder="请输入用户名"
-                           autocomplete="off"
+                    <input type="text" id="username" lay-verify="required" placeholder="请输入用户名"
+                           autocomplete="new-password"
                            class="layui-input">
                 </div>
             </div>
             <div class="layui-form-item">
                 <label class="layui-form-label">密码</label>
                 <div class="layui-input-inline">
-                    <input type="password" id="password" required lay-verify="required" placeholder="请输入密码"
-                           autocomplete="off" class="layui-input">
+                    <input type="password" id="password" lay-verify="required" placeholder="请输入密码"
+                           autocomplete="new-password" class="layui-input">
                 </div>
             </div>
             <div class="layui-form-item">
@@ -91,70 +91,8 @@
 
 <script type="text/javascript" src="/framework/jquery.min.js"></script>
 <script src="/layui/layui.js"></script>
-<script>
-    //Demo
-    layui.use(['form', 'layer'], function () {
-        var $ = layui.jquery,
-            form = layui.form,
-            layer = layui.layer;
-
-        //监听提交
-        form.on('submit(registerBtn)', function (data) {
-            var username = $("#username").val();
-            var password = $("#password").val();
-            var phone = $("#phone").val();
-            var head_url = $("#head_url").val();
-            var email = $("#email").val();
-            var sex = $("#sex").val();
-            if (sex) {
-                sex = 1;
-            } else {
-                sex = 0;
-            }
-            var params = {
-                "username": username,
-                "password": password,
-                "phone": phone,
-                "headUrl": head_url,
-                "email": email,
-                "sex": sex
-            };
-            $.ajax({
-                type: "POST",
-                data: params,
-                async: true,
-                url: "/register",
-                success: function (data) {
-                    if (data.code == 200) {
-                        layui.use(['layer'], function () {
-                            var layer = layui.layer;
-                            layer.alert("添加成功", {
-                                offset: '20%',
-                                icon: 1
-                            }, function () {
-                                window.parent.location.reload();
-                                var index = parent.layer.getFrameIndex(window.name);
-                                parent.layer.close(index);
-                            });
-                        });
-                    }
-                    else {
-                        layui.use(['layer'], function () {
-                            var layer = layui.layer;
-                            layer.msg("添加失败," + data.msg, {
-                                offset: '50%',
-                                icon: 2,
-                                time: 2000
-                            });
-                        });
-                    }
-                }
-            });
-            form.render();
-        });
-    });
-</script>
 <script src="/js/website/user/upload.js"/>
+
 </body>
 
 </html>

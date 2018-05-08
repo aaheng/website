@@ -101,7 +101,8 @@ public class LoginController {
 
 
     @RequestMapping("/login")
-    public String login(String username, String password, Model model, HttpServletResponse response, @RequestParam(name = "callback", defaultValue = "") String callback) {
+    @ResponseBody
+    public SResponse login(String username, String password, Model model, HttpServletResponse response, @RequestParam(name = "callback", defaultValue = "") String callback) {
         SResponse resp = loginService.login(username, password);
         //登录成功,需要将token信息存起来
         if (resp.getResult() != null) {
@@ -111,12 +112,12 @@ public class LoginController {
             cookie.setMaxAge(3600 * 24);
             response.addCookie(cookie);
             if (StringUtils.isNotBlank(callback)) {
-                return "redirect:" + callback;
+                model.addAttribute("callback",callback);
             }
-            return "redirect:/";
+            resp.setCode(Code.SUCCESS_CODE);
+            resp.setMsg(Code.SUCCESS_MSG);
         }
-        model.addAttribute("result", response);
-        return "login";
+       return resp;
     }
 
     @RequestMapping("/toLogin")

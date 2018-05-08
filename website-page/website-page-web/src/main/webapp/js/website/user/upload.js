@@ -1,7 +1,9 @@
-layui.use(['upload', 'layer'], function () {
+layui.use(['upload', 'layer','form'], function () {
     var $ = layui.jquery,
         upload = layui.upload,
+        form = layui.form,
         layer = layui.layer;
+    alert("123");
     upload.render({
         elem: '#uploadBtn'
         , url: '/upload/uploadImage'
@@ -32,4 +34,38 @@ layui.use(['upload', 'layer'], function () {
         }
     });
 
+    //监听提交
+    form.on('submit(registerBtn)', function (data) {
+        var username = $("#username").val();
+        var password = $("#password").val();
+        var phone = $("#phone").val();
+        var head_url = $("#head_url").val();
+        var email = $("#email").val();
+        var sex = $("#sex").val();
+        if (sex) {
+            sex = 1;
+        } else {
+            sex = 0;
+        }
+        var params = {
+            "username": username,
+            "password": password,
+            "phone": phone,
+            "headUrl": head_url,
+            "email": email,
+            "sex": sex
+        };
+        $.post("/register",params,function (data) {
+            if (data.code == 200){
+                window.location.href = "http://localhost:8080";
+            }else {
+                layer.msg(data.msg, {
+                    offset: '50%',
+                    icon: 2,
+                    time: 2000
+                });
+            }
+        });
+        form.render();
+    });
 });
