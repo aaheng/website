@@ -1,0 +1,8 @@
+cn\website\page\pojo\User.class
+cn\website\page\pojo\DiscussComment.class
+cn\website\page\pojo\EntityType.class
+cn\website\page\pojo\LoginToken.class
+cn\website\page\pojo\ViewObject.class
+cn\website\page\pojo\Message.class
+cn\website\page\pojo\DiscussQuestion.class
+cn\website\page\pojo\HostHolder.class

@@ -1,0 +1,9 @@
+cn\website\mapper\user\MessageMapper.class
+cn\website\mapper\discuss\DiscussQuestionMapper.class
+cn\website\mapper\discuss\DiscussCommentMapper.class
+cn\website\mapper\file\FileMapper.class
+cn\website\mapper\login\LoginTokenMapper.class
+cn\website\mapper\user\UserMapper.class
+cn\website\mapper\login\LoginMapper.class
+cn\website\mapper\video\VideoMapper.class
+cn\website\mapper\follow\FollowMapper.class

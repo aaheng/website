@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.website.mapper.user.UserMapper">
+    <sql id="selector">SELECT id,username,password,phone,email,sex,created,salt,status,is_delete,head_url as headUrl FROM user</sql>
+
+	<!-- 用户注册,即添加用户 -->
+	<insert id="insertUser" parameterType="User">
+		insert into user (username,password,phone,email,sex,created,salt,status,is_delete,head_url)
+		values (#{username},#{password},#{phone},#{email},#{sex},now(),#{salt},#{status},0,#{headUrl})
+	</insert>
+    <!-- 通过id查询用户 -->
+    <select id="getUserById" parameterType="String" resultType="User">
+        <include refid="selector"/>
+        WHERE is_delete = 0
+        <if test="id != null and id != ''">
+            AND id = #{id}
+        </if>
+    </select>
+    <!-- 通过用户名模糊查询用户列表 -->
+    <!--<select id="findUserByUsername" parameterType="String" resultType="User">
+        <include refid="selector"/>
+        where username like "%"#{v}"%"
+    </select>-->
+
+    <!--通过用户名查找用户,检验用户名是否可用-->
+    <select id="getUserByUsername" parameterType="String" resultType="User">
+        <include refid="selector"/>
+        WHERE username = #{username}
+    </select>
+    <!--检验手机号码是否已注册-->
+    <select id="getUserByPhone" parameterType="String" resultType="User">
+        <include refid="selector"/>
+        WHERE phone = #{phone}
+    </select>
+
+    <!--获取插入id-->
+    <select id="getInsertId" resultType="Integer">
+        SELECT LAST_INSERT_ID()
+    </select>
+</mapper>

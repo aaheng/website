@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.website.mapper.discuss.DiscussCommentMapper">
+    <sql id="selector">SELECT id,content,user_id,comment_count,date_format(create_time,'%Y-%m-%d %H:%i:%s') as create_time,entity_id,entity_type FROM discuss_comment</sql>
+
+    <select id="getCommentByEntity" resultType="DiscussComment">
+        <include refid="selector"/>
+        WHERE is_delete = 0 AND entity_id=#{entityId} AND entity_type=#{entityType}
+    </select>
+
+    <!--新增评论-->
+    <insert id="insertDiscussComment" parameterType="DiscussComment">
+        INSERT INTO discuss_comment
+        (content,user_id,comment_count,create_time,entity_id,entity_type,is_delete)
+        VALUES (#{content},#{user_id},#{comment_count},now(),#{entity_id},#{entity_type},0)
+    </insert>
+
+    <update id="deleteDiscussComment" parameterType="Integer">
+        UPDATE discuss_comment
+        SET is_delete = 1
+        WHERE id = #{id}
+    </update>
+
+     <!--更新评论的评论数-->
+    <update id="updateCommentCommentCount" parameterType="Integer">
+        UPDATE discuss_comment
+        SET comment_count = #{comment_count}
+        WHERE id = #{id}
+    </update>
+
+    <!--获取某entity下的评论数-->
+    <select id="getCommentCountByEntity" parameterType="Integer" resultType="Integer">
+        SELECT count(id) FROM discuss_comment
+        WHERE entity_id=#{entity_id} and entity_type=#{entity_type}
+    </select>
+
+    <!--根据id查询评论-->
+    <select id="getDiscussCommentById" parameterType="Integer" resultType="DiscussComment">
+        <include refid="selector"/>
+        WHERE is_delete = 0 AND id = #{id}
+    </select>
+
+    <select id="getUserCommentCount" parameterType="Integer">
+        select count(id) from discuss_comment where user_id = #{userId}
+    </select>
+
+</mapper>

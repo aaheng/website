@@ -1,0 +1,16 @@
+cn\website\controller\video\VideoController.class
+cn\website\controller\user\UserController.class
+cn\website\interceptor\PassportInterceptor.class
+cn\website\controller\discuss\LikeController.class
+cn\website\controller\video\VideoCommentController.class
+cn\website\controller\discuss\DiscussQuestionController.class
+cn\website\controller\follow\FollowController.class
+cn\website\controller\video\UploadController.class
+cn\website\controller\user\MessageController.class
+cn\website\interceptor\LoginRequiredInterceptor.class
+cn\website\controller\index\IndexController.class
+cn\website\controller\upload\UploadController.class
+cn\website\controller\discuss\DiscussCommentController.class
+cn\website\controller\discuss\DiscussController.class
+cn\website\controller\login\LoginController.class
+cn\website\controller\TestController.class

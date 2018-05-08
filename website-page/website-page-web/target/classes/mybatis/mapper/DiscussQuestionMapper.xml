@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.website.mapper.discuss.DiscussQuestionMapper">
+    <sql id="selector">SELECT id,title,content,user_id,comment_count,date_format(create_time,'%Y-%m-%d %H:%i:%s') as create_time FROM discuss_question</sql>
+
+    <!-- 讨论区问题集合 -->
+    <select id="getDiscussQuestionList" resultType="DiscussQuestion">
+        <include refid="selector"/>
+        WHERE is_delete = 0
+    </select>
+
+    <!--获取最新问题-->
+    <select id="getLatestQuestions" resultType="DiscussQuestion" parameterType="Integer">
+        <include refid="selector"/>
+        WHERE is_delete = 0
+        AND user_id=#{userId} order by id desc limit #{index},#{limit}
+    </select>
+
+    <!--根据id查找问题-->
+    <select id="getDiscussQuestionById" parameterType="Integer" resultType="DiscussQuestion">
+        <include refid="selector"/>
+            WHERE is_delete = 0
+        <if test="id != null and id != ''">
+            AND id = #{id}
+        </if>
+    </select>
+
+    <!--添加问题-->
+    <insert id="insertDiscussQuestion" parameterType="DiscussQuestion">
+        INSERT INTO discuss_question
+        (title,content,user_id,comment_count,create_time,is_delete)
+        VALUES (#{title},#{content},#{user_id},#{comment_count},now(),0)
+    </insert>
+
+    <!--删除问题-->
+    <update id="deleteDiscussQuestion" parameterType="Integer">
+        UPDATE discuss_question
+        SET is_delete = 1
+        WHERE id = #{id}
+    </update>
+
+    <!--更新问题的评论数-->
+    <update id="updateQuestionCommentCount" parameterType="Integer">
+        UPDATE discuss_question
+        SET comment_count = #{comment_count}
+        WHERE id = #{question_id}
+    </update>
+
+</mapper>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.website.mapper.file.FileMapper">
+    <sql id="selector">id,type,size,path,is_delete as isDelete,title_orig as titleOrig,title_alter as titleAlter,upload_time as uploadTime,user_id as userId</sql>
+
+	<!-- 添加文件 -->
+	<insert id="insertFile" parameterType="cn.website.common.pojo.FileEntity">
+		insert into file (type,size,path,is_delete,title_orig,title_alter,upload_time,user_id)
+		values (#{type},#{size},#{path},0,#{titleOrig},#{titleAlter},#{uploadTime},#{userId})
+	</insert>
+
+	<!--删除文件-->
+	<update id="deleteFile" parameterType="Integer">
+        UPDATE file
+        SET is_delete = 1
+        WHERE id = #{id}
+    </update>
+
+
+</mapper>

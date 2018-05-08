@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.website.mapper.video.VideoMapper">
+    <sql id="selector">id,type,size,path,is_delete as isDelete,title_orig as titleOrig,title_alter as titleAlter,upload_time as uploadTime,user_id as userId</sql>
+
+	<select id="getVideoList" resultType="cn.website.common.pojo.FileEntity" parameterType="String">
+        SELECT
+        <include refid="selector"></include>
+        FROM file t
+        WHERE t.type = #{type}
+    </select>
+
+    <select id="getVideoById" resultType="cn.website.common.pojo.FileEntity" parameterType="Integer">
+        SELECT
+        <include refid="selector"/>
+        FROM file t
+        where t.is_delete = 0
+        and t.id = #{id}
+    </select>
+</mapper>

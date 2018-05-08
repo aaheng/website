@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.website.mapper.user.MessageMapper">
+    <sql id="selector">id,from_id,to_id,content,date_format(create_time,'%Y-%m-%d %H:%i:%s') as create_time,has_read,conversation_id,is_delete</sql>
+
+	<!-- 添加信息 -->
+	<insert id="insertMessage" parameterType="Message">
+		insert into message (from_id,to_id,content,create_time,has_read,conversation_id,is_delete)
+		values (#{from_id},#{to_id},#{content},now(),0,#{conversation_id},0)
+	</insert>
+
+	<select id="getConversationList" parameterType="Integer" resultType="Message">
+		SELECT <include refid="selector"/>
+		FROM message
+		WHERE
+	</select>
+
+</mapper>

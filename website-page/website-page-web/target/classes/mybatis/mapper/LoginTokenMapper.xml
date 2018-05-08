@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.website.mapper.login.LoginTokenMapper">
+    <sql id="selector">id,user_id,token,status,expired</sql>
+
+	<!-- 添加 -->
+	<insert id="insertToken" parameterType="LoginToken">
+		insert into login_token (user_id,token,status,expired)
+		values (#{user_id},#{token},0,#{expired})
+	</insert>
+
+    <select id="getByToken" parameterType="String" resultType="LoginToken">
+        select
+          <include refid="selector"></include>
+        from login_token
+        where token=#{token}
+    </select>
+
+	<!--退出-->
+	<update id="updateLoginTokenStatus" parameterType="Integer">
+        UPDATE login_token
+        set status=1
+        where user_id=#{user_id}
+    </update>
+
+
+</mapper>
