@@ -10,6 +10,7 @@ cn\website\service\async\handler\FollowHandler.class
 cn\website\service\async\handler\AddQuestionHandler.class
 cn\website\service\video\VideoService.class
 cn\website\service\discuss\LikeService.class
+cn\website\service\feed\FeedService.class
 cn\website\service\user\UserService.class
 cn\website\service\SensitiveService.class
 cn\website\service\login\LoginService.class

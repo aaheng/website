@@ -1,5 +1,6 @@
 cn\website\mapper\user\MessageMapper.class
 cn\website\mapper\discuss\DiscussQuestionMapper.class
+cn\website\mapper\feed\FeedMapper.class
 cn\website\mapper\discuss\DiscussCommentMapper.class
 cn\website\mapper\file\FileMapper.class
 cn\website\mapper\login\LoginTokenMapper.class

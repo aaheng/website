@@ -218,4 +218,9 @@ public class FollowController {
     public String toFOllow(){
         return "follow/followers";
     }
+
+    @RequestMapping("/followee")
+    public String toFollowee(){
+        return "follow/followees";
+    }
 }

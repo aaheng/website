@@ -54,7 +54,7 @@
                             <a href="/follow/">社交管理</a>
                         </dd>
                         <dd>
-                            <a href="">消息管理</a>
+                            <a href="/user/${user.id}">我的主页</a>
                         </dd>
                     </dl>
                 </li>
