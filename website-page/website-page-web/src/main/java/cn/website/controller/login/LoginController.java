@@ -1,22 +1,22 @@
 package cn.website.controller.login;
 
+import cn.website.common.plugins.PageData;
 import cn.website.common.pojo.Code;
 import cn.website.common.pojo.SResponse;
+import cn.website.controller.BaseController;
 import cn.website.page.pojo.LoginToken;
 import cn.website.page.pojo.User;
 import cn.website.service.login.ILoginService;
 import cn.website.service.login.LoginService;
 import cn.website.service.login.LoginTokenService;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.ibatis.annotations.Param;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.Cookie;
@@ -25,7 +25,7 @@ import java.util.Date;
 import java.util.UUID;
 
 @Controller
-public class LoginController {
+public class LoginController extends BaseController{
     private final static Logger logger = LoggerFactory.getLogger(LoginController.class);
 
     @Autowired
@@ -33,16 +33,23 @@ public class LoginController {
     @Autowired
     private LoginTokenService loginTokenService;
 
-    @RequestMapping("/register")
+    /*@RequestMapping(value = "/register",method = RequestMethod.POST, produces = "application/json; charset=utf-8")
     @ResponseBody
-    public SResponse register(User user, Model model, HttpServletResponse response) {
+    public SResponse register(Model model, HttpServletResponse response,User user) {
         //SResponse resp = loginService.register(user);
+        *//*PageData pd = getPageData();
+        String username = pd.getString("username");
+        String password = pd.getString("password");
+        String email = pd.getString("email");
+        String phone = pd.getString("phone");*//*
         SResponse resp = new SResponse();
-        if (user == null) {
+        if (user == null){
             resp.setCode(Code.PARAMS_ERROR_CODE);
             resp.setMsg(Code.PARAMS_ERROR_MSG);
             return resp;
         }
+
+
         //检查USER的参数是否为空
         if (StringUtils.isBlank(user.getEmail()) || StringUtils.isBlank(user.getUsername())
                 || StringUtils.isBlank(user.getPassword()) || StringUtils.isBlank(user.getPhone())) {
@@ -74,7 +81,7 @@ public class LoginController {
                 date.setTime(date.getTime() + 3600 * 24 * 2);
                 loginToken.setExpired(date);
                 loginToken.setStatus(0);// 0有效，1无效
-                loginToken.setUser_id(user.getId());
+                loginToken.setUser_id(loginService.getUserByUsername(user.getUsername()).getId());
                 String token = UUID.randomUUID().toString().replaceAll("-", "");
                 loginToken.setToken(token);
                 if (loginTokenService.insertToken(loginToken)) {
@@ -82,20 +89,67 @@ public class LoginController {
                     cookie.setPath("/");
                     response.addCookie(cookie);
                     resp.setCode(Code.SUCCESS_CODE);
+                    resp.setMsg(Code.SUCCESS_MSG);
                     return resp;
-                } else {
-                    resp.setCode(Code.EXCEPTION_CODE);
-                    resp.setMsg(Code.EXCEPTION_MSG);
                 }
-            } else {
-                resp.setCode(Code.EXCEPTION_CODE);
-                resp.setMsg(Code.EXCEPTION_MSG);
             }
         } catch (Exception e) {
             resp.setCode(Code.EXCEPTION_CODE);
             resp.setMsg(Code.EXCEPTION_MSG);
             return  resp;
         }
+        return resp;
+    }*/
+    @RequestMapping("/register")
+    @ResponseBody
+    public SResponse register(HttpServletResponse response){
+        PageData pd = getPageData();
+        SResponse resp = new SResponse();
+        String username = pd.getString("username");
+        String password = pd.getString("password");
+        String email = pd.getString("email");
+        String phone = pd.getString("phone");
+        if (StringUtils.isBlank(username) || StringUtils.isBlank(password) || StringUtils.isBlank(email) || StringUtils.isBlank(phone)){
+            resp.setCode(Code.PARAM_ERROR_CODE);
+            resp.setMsg(Code.PARAM_ERROR_MSG);
+            return resp;
+        }
+        //判断用户名是否存在
+        User userByUsername = loginService.getUserByUsername(username);
+        if (userByUsername != null){
+            resp.setMsg(Code.USER_EXIST_MSG);
+            resp.setCode(Code.USER_EXIST_CODE);
+            return resp;
+        }
+        User userByPhone = loginService.getUserByPhone(phone);
+        if (userByPhone != null){
+            resp.setCode(Code.PHONE_EXIST_CODE);
+            resp.setMsg(Code.PHONE_EXIST_MSG);
+            return resp;
+        }
+        User user = new User();
+        user.setUsername(username);
+        user.setPassword(password);
+        user.setEmail(email);
+        user.setPhone(phone);
+        user.setSex(Integer.parseInt(pd.getString("sex")));
+        user.setHeadUrl(pd.getString("headUrl"));
+        loginService.register(user);
+        //注册成功,将用户信息存储起来
+        LoginToken loginToken = new LoginToken();
+        Date date = new Date();
+        date.setTime(date.getTime() + 3600 * 24 * 2);
+        loginToken.setExpired(date);
+        loginToken.setStatus(0);// 0有效，1无效
+        loginToken.setUser_id(loginService.getUserByUsername(user.getUsername()).getId());
+        String token = UUID.randomUUID().toString().replaceAll("-", "");
+        loginToken.setToken(token);
+        loginTokenService.insertToken(loginToken);
+        Cookie cookie = new Cookie("token", token);
+        cookie.setPath("/");
+        response.addCookie(cookie);
+        resp.setCode(Code.SUCCESS_CODE);
+        resp.setMsg(Code.SUCCESS_MSG);
         return resp;
     }
 
@@ -112,7 +166,8 @@ public class LoginController {
             cookie.setMaxAge(3600 * 24);
             response.addCookie(cookie);
             if (StringUtils.isNotBlank(callback)) {
-                model.addAttribute("callback",callback);
+               resp.setResult(callback);
+              // model.addAttribute("callback",callback);
             }
             resp.setCode(Code.SUCCESS_CODE);
             resp.setMsg(Code.SUCCESS_MSG);
@@ -121,7 +176,10 @@ public class LoginController {
     }
 
     @RequestMapping("/toLogin")
-    public String toLogin() {
+    public String toLogin(@Param("callback")String callback,Model model) {
+        if (StringUtils.isNotBlank(callback)){
+            model.addAttribute("callback",callback);
+        }
         return "login";
     }
 

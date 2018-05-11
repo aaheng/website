@@ -36,7 +36,7 @@
                             <input type="password" id="password" aria-label="密码" placeholder="密码" autocomplete="new-password">
                         </div>
                     </div>
-                    <input type="hidden" name="callback" value="${callback}"/>
+                    <input type="hidden" name="callback" id="callback" value="${callback}"/>
                     <div class="button-wrapper command clearfix">
                         <button class="sign-button submit" type="button" id="submitLogin">登录</button>
                         <button class="sign-button submit" type="reset">重置</button>
@@ -60,14 +60,16 @@
                 var layer = layui.layer;
                 var username = $("#username").val();
                 var password = $("#password").val();
+                var callback = $("#callback").val();
                 if (username == ''){
                     layer.alert("用户名不能为空");
                 }else if(password == ''){
                     layer.alert("密码不能为空");
                 }else {
-                    $.post("/login",{"username":username,"password":password},function (data) {
+                    $.post("/login",{"username":username,"password":password,"callback":callback},function (data) {
                         if (data.code == 200){
-                            window.location.href = "http://localhost:8080";
+                            //window.location.href = "http://localhost:8081"+data.result;
+                            $(location).attr('href', 'http://localhost:8081/'+data.result);
                         }else {
                             layer.msg(data.msg, {
                                 offset: '50%',

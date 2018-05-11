@@ -4,7 +4,7 @@ import cn.website.common.utils.FileUtils;
 
 public class Constants {
 
-	public static String img_preview_url = "http://localhost:8080/";	// 图片预览地址
+	public static String img_preview_url = "http://localhost:8081/";	// 图片预览地址
 	public static String img_preview_dir = "UploadPic";   //图片存放的目录
 	public static String img_thumbnail_dir = "thumbnail"; //图片对应缩略图存放的目录
 

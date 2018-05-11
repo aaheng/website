@@ -39,7 +39,7 @@
                 <version>2.2</version>
                 <configuration>
                     <!--端口号 -->
-                    <port>8080</port>
+                    <port>8081</port>
                     <!--项目访问的根目录
                     url:localhost:8090/项目名称/addUser.action
                     -->

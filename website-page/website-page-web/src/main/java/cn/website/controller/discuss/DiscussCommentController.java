@@ -32,7 +32,7 @@ public class DiscussCommentController {
         if (hostHolder.get() == null){
             resp.setCode(Code.USER_UN_LOGIN_CODE);
             resp.setMsg(Code.USER_UN_LOGIN_MSG);
-            resp.setResult("/question/"+questionId);
+            resp.setResult("/discuss/question/detail/"+questionId);
             return resp;
         }
         resp = discussCommentService.addComment(content, questionId);

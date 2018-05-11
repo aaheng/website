@@ -126,10 +126,10 @@
                             </div>
                             <div class="answer-head">
                                 <div class="zm-item-answer-author-info">
-                                    <a class="zm-item-link-avatar avatar-link" href="" target="_blank"
+                                    <a class="zm-item-link-avatar avatar-link" href="${vo.get('user').headUrl}" target="_blank"
                                        data-tip="p$t$yingxiaodao">
-                                            <%--<img src="/images/res/11be4a90ed938abfbab4899df56ee754_s.png"
-                                                 class="zm-list-avatar avatar">--%></a>
+                                            <img src="${vo.get('user').headUrl}"
+                                                 class="zm-list-avatar avatar"></a>
                                     <a class="author-link" data-tip="p$t$yingxiaodao" target="_blank"
                                        href="">${vo.get("user").username}</a>
                                     <span title="" class="bio"></span></div>
@@ -232,7 +232,8 @@
                         url: "/discuss/comment/add",
                         success: function (data) {
                             if (data.code == 999){
-                                window.location.href = "localhost:8080/toLogin";
+                                $(location).attr('href', 'http://localhost:8081/toLogin?callback='+data.result);
+                                //window.location.href = "localhost:8081/toLogin";
                             }else if (data.code == 200) {
                                 layui.use(['layer'], function () {
                                     var layer = layui.layer;

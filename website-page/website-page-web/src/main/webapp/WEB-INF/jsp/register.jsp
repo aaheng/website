@@ -5,9 +5,6 @@
 <head>
     <meta charset="utf-8">
     <title>layui</title>
-    <meta name="renderer" content="webkit">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="/layui/css/layui.css" media="all">
     <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
 </head>
@@ -19,7 +16,7 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 用户注册
         </div>
         <br/>
-        <form class="layui-form" action="/register" method="post">
+        <form class="layui-form">
             <div class="layui-form-item">
                 <label class="layui-form-label">用户名</label>
                 <div class="layui-input-inline">
@@ -91,12 +88,73 @@
 
 <script type="text/javascript" src="/framework/jquery.min.js"></script>
 <script src="/layui/layui.js"></script>
-<script src="/js/website/user/upload.js"/>
 <script>
-    /*$(document).ready(function () {
+    layui.use(['element', 'layer','form','upload'], function () {
+        var element = layui.element,//导航的hover效果、二级菜单等功能，需要依赖element模块
+            layer = layui.layer,
+            upload = layui.upload,
+            form = layui.form;
 
-    });*/
+        form.on('submit(registerBtn)', function(data) {
+            var username = $("#username").val();
+            var password = $("#password").val();
+            var phone = $("#phone").val();
+            var head_url = $("#head_url").val();
+            var email = $("#email").val();
+            var sex = $("#sex").val();
+            if (sex) {
+                sex = 1;
+            } else {
+                sex = 0;
+            }
+            var params = {
+                username : username,
+                password : password,
+                phone : phone,
+                headUrl : head_url,
+                email : email,
+                sex : sex
+            };
+            $.post("/register",params,function (data) {
+                if(data.code == 200){
+                    $(location).attr('href', 'http://localhost:8081');
+                    form.render();
+                }else {
+                    layer.msg(data.msg, {
+                        offset: '50%',
+                        icon: 2,
+                        time: 2000
+                    });
+
+                    form.render();
+                }
+            });
+            form.render();
+        });
+
+        upload.render({
+            elem: '#uploadBtn'
+            , url: '/upload/uploadImage'
+            ,field : "file"
+            , done: function (res) {
+                if (res.code == 200) {
+                    $("#headerImg").attr("src", res.result.imgPath);
+                    $("#headerImg").attr("style","display:block;width:50px;height:50px;padding-left: 10px");
+                    $("#head_url").val(res.result.imgPath);
+                    $("#headImgHref").attr("href",res.result.imgPath);
+                } else {
+                    layer.msg(data.msg, {
+                        offset: '50%',
+                        icon: 2,
+                        time: 2000
+                    });
+                }
+            }
+        });
+    });
 </script>
+<%--<script src="/js/website/user/upload.js"/>--%>
+
 </body>
 
 </html>

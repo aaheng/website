@@ -37,10 +37,10 @@ public class FollowHandler implements EventHandler {
 
         if (model.getEntityType() == EntityType.ENTITY_QUESTION) {
             message.setContent("用户" + user.getUsername()
-                    + "关注了你的问题,http://127.0.0.1:8080/question/" + model.getEntityId());
+                    + "关注了你的问题,http://127.0.0.1:8081/question/" + model.getEntityId());
         } else if (model.getEntityType() == EntityType.ENTITY_USER) {
             message.setContent("用户" + user.getUsername()
-                    + "关注了你,http://127.0.0.1:8080/user/" + model.getActorId());
+                    + "关注了你,http://127.0.0.1:8081/user/" + model.getActorId());
         }
 
         messageService.insertMessage(message);

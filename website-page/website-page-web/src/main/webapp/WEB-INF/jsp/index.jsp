@@ -63,7 +63,7 @@
                                         <a title="赵永峰" data-tip="p$t$zhao-yong-feng" class="zm-item-link-avatar"
                                            target="_blank"
                                            href="/user/${vo.get('user').id}">
-                                            <img src="/images/res/b3aadf89405941b05a5ce00fb06f8281_m.jpg"
+                                            <img src="${vo.get('user').headUrl}"
                                                  class="zm-item-img-avatar"></a>
                                     </div>
                                     <div class="feed-main">

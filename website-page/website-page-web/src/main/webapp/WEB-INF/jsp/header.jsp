@@ -7,7 +7,7 @@
     <!-- 头部区域（可配合layui已有的水平导航） -->
     <ul class="layui-nav layui-layout-left">
         <li class="layui-nav-item">
-            <a href="">首页</a>
+            <a href="/">首页</a>
         </li>
         <li class="layui-nav-item">
             <a href="/video">教学视频</a>
@@ -46,6 +46,9 @@
             <c:otherwise>
                 <li class="layui-nav-item">
                     <a href="/user/toMessage">消息</a>
+                </li>
+                <li class="layui-nav-item">
+                    <a href="/toRegister">注册</a>
                 </li>
                 <li class="layui-nav-item">
                     <a href="/user/${user.id}">${user.username}</a>

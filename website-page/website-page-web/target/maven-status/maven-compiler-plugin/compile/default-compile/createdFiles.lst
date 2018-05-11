@@ -9,6 +9,7 @@ cn\website\controller\follow\FollowController.class
 cn\website\controller\video\UploadController.class
 cn\website\interceptor\LoginRequiredInterceptor.class
 cn\website\controller\user\MessageController.class
+cn\website\controller\BaseController.class
 cn\website\controller\index\IndexController.class
 cn\website\controller\upload\UploadController.class
 cn\website\controller\discuss\DiscussController.class

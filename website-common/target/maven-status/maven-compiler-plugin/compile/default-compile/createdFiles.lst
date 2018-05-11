@@ -9,6 +9,7 @@ cn\website\common\utils\TransfMediaTool.class
 cn\website\common\redis\JedisClientCluster.class
 cn\website\common\async\EventHandler.class
 cn\website\common\async\EventConsumer.class
+cn\website\common\plugins\PageData.class
 cn\website\common\async\EventType.class
 cn\website\common\utils\JedisAdapter.class
 cn\website\common\pojo\SResponse.class

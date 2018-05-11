@@ -27,7 +27,7 @@ public class LikeHandler implements EventHandler {
         message.setFrom_id(model.getActorId());
         message.setTo_id(model.getEntityOwnerId());
         User user = userService.getUserById(model.getActorId());
-        message.setContent("用户"+user.getUsername()+"赞了你的评论,http://127.0.0.1:8080/question/"+model.getExt("questionId"));
+        message.setContent("用户"+user.getUsername()+"赞了你的评论,http://127.0.0.1:8081/question/"+model.getExt("questionId"));
         //发送站内信
         messageService.insertMessage(message);
     }

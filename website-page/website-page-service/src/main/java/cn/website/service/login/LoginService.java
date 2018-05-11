@@ -11,6 +11,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.DigestUtils;
 
 import javax.annotation.Resource;
@@ -26,6 +27,7 @@ public class LoginService{
     @Resource(name = "loginTokenMapper")
     private LoginTokenMapper loginTokenMapper;
 
+    @Transactional
     public boolean register(User user) {
         //将用户信息添加进数据库
         user.setSalt(UUID.randomUUID().toString().substring(0, 5));
