@@ -50,9 +50,9 @@
                             <div class="col-2-4">
                                 <div class="wrap-col">
                                     <div class="zoom-container" style="padding-top: 0px;">
-                                        <a href="/video/detail">
+                                        <a href="/video/detail/17">
                                             <video width="550" height="400" controls>
-                                                <source src="/video/test.mp4" type="video/mp4">
+                                                <source src="/video/video.mp4" type="video/mp4">
                                             </video>
                                         </a>
                                     </div>
@@ -63,7 +63,7 @@
                             <div class="col-1-4">
                                 <div class="wrap-col">
                                     <div class="zoom-container">
-                                        <a href="single.html">
+                                        <a href="">
 									<span class="zoom-caption">
 										<i class="icon-play fa fa-play"></i>
 									</span>
@@ -133,141 +133,6 @@
                             </section>
                         </div>
                     </div>
-                    <%-- <div id="sidebar" class="col-1-3">
-                         <form id="form-container" action="">
-                             <!--<input type="submit" id="searchsubmit" value="" />-->
-                             <a class="search-submit-button" href="javascript:void(0)">
-                                 <i class="fa fa-search"></i>
-                             </a>
-                             <div id="searchtext">
-                                 <input type="text" id="s" name="s" placeholder="Search Something...">
-                             </div>
-                         </form>
-                         <!---- Start Widget ---->
-                         <div class="widget wid-post">
-                             <div class="wid-header">
-                                 <h5>Latest Posts</h5>
-                             </div>
-                             <div class="wid-content">
-                                 <div class="post wrap-vid">
-                                     <div class="zoom-container">
-                                         <a href="single.html">
-                                         <span class="zoom-caption">
-                                             <i class="icon-play fa fa-play"></i>
-                                         </span>
-                                             <img src="/images/4.jpg"/>
-                                         </a>
-                                     </div>
-                                     <div class="wrapper">
-                                         <h5 class="vid-name"><a href="#">Video's Name</a></h5>
-                                         <div class="info">
-                                             <h6>By <a href="#">Kelvin</a></h6>
-                                             <span><i class="fa fa-calendar"></i>25/3/2015</span>
-                                             <span><i class="fa fa-heart"></i>1,200</span>
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <div class="post wrap-vid">
-                                     <div class="zoom-container">
-                                         <a href="single.html">
-                                         <span class="zoom-caption">
-                                             <i class="icon-play fa fa-play"></i>
-                                         </span>
-                                             <img src="/images/14.jpg"/>
-                                         </a>
-                                     </div>
-                                     <div class="wrapper">
-                                         <h5 class="vid-name"><a href="#">Video's Name</a></h5>
-                                         <div class="info">
-                                             <h6>By <a href="#">Kelvin</a></h6>
-                                             <span><i class="fa fa-calendar"></i>25/3/2015</span>
-                                             <span><i class="fa fa-heart"></i>1,200</span>
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <div class="post wrap-vid">
-                                     <div class="zoom-container">
-                                         <a href="single.html">
-                                         <span class="zoom-caption">
-                                             <i class="icon-play fa fa-play"></i>
-                                         </span>
-                                             <img src="/images/3.jpg"/>
-                                         </a>
-                                     </div>
-                                     <div class="wrapper">
-                                         <h5 class="vid-name"><a href="#">Video's Name</a></h5>
-                                         <div class="info">
-                                             <h6>By <a href="#">Kelvin</a></h6>
-                                             <span><i class="fa fa-calendar"></i>25/3/2015</span>
-                                             <span><i class="fa fa-heart"></i>1,200</span>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                         <!---- Start Widget ---->
-                         <div class="widget wid-news">
-                             <div class="wid-header">
-                                 <h5>Top News</h5>
-                             </div>
-                             <div class="wid-content">
-                                 <div class="row">
-                                     <div class="wrap-vid">
-                                         <div class="zoom-container">
-                                             <a href="single.html">
-                                             <span class="zoom-caption">
-                                                 <i class="icon-play fa fa-play"></i>
-                                             </span>
-                                                 <img src="/images/1.jpg"/>
-                                             </a>
-                                         </div>
-                                         <h3 class="vid-name">Video's Name</h3>
-                                         <div class="info">
-                                             <h5>By <a href="#">Kelvin</a></h5>
-                                             <span><i class="fa fa-calendar"></i>25/3/2015</span>
-                                             <span><i class="fa fa-heart"></i>1,200</span>
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <div class="row">
-                                     <div class="wrap-vid">
-                                         <div class="zoom-container">
-                                             <a href="single.html">
-                                             <span class="zoom-caption">
-                                                 <i class="icon-play fa fa-play"></i>
-                                             </span>
-                                                 <img src="/images/2.jpg"/>
-                                             </a>
-                                         </div>
-                                         <h3 class="vid-name">Video's Name</h3>
-                                         <div class="info">
-                                             <h5>By <a href="#">Kelvin</a></h5>
-                                             <span><i class="fa fa-calendar"></i>25/3/2015</span>
-                                             <span><i class="fa fa-heart"></i>1,200</span>
-                                         </div>
-                                     </div>
-                                 </div>
-                                 <div class="row">
-                                     <div class="wrap-vid">
-                                         <div class="zoom-container">
-                                             <a href="single.html">
-                                             <span class="zoom-caption">
-                                                 <i class="icon-play fa fa-play"></i>
-                                             </span>
-                                                 <img src="/images/4.jpg"/>
-                                             </a>
-                                         </div>
-                                         <h3 class="vid-name">Video's Name</h3>
-                                         <div class="info">
-                                             <h5>By <a href="#">Kelvin</a></h5>
-                                             <span><i class="fa fa-calendar"></i>25/3/2015</span>
-                                             <span><i class="fa fa-heart"></i>1,200</span>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                     </div>--%>
                 </div>
             </div>
         </section>
@@ -398,18 +263,26 @@
 
 <script type="text/javascript">
     function uploadVideo() {
-        layui.use(['layer'], function () {
-            var layer = layui.layer;
-            layerIndex = layer.open({
-                title: "上传视频",
-                type: 2,
-                content: "/video/toAddVideo",
-                maxmin: false,
-                resize: true,
-                offset: '5%',
-                area: ["300px", "100px"]
-            });
+        $.post("/common/checkLogin", function (data) {
+            if (data.code == 999) {
+                //未登录
+                $(location).attr('href', 'http://localhost:8081/toLogin?callback=/video/');
+            }else if (data.code == 888){
+                layui.use(['layer'], function () {
+                    var layer = layui.layer;
+                    layerIndex = layer.open({
+                        title: "上传视频",
+                        type: 2,
+                        content: "/video/toAddVideo",
+                        maxmin: false,
+                        resize: true,
+                        offset: '5%',
+                        area: ["400px", "300px"]
+                    });
+                });
+            }
         });
+
     }
 
     $(document).ready(function () {

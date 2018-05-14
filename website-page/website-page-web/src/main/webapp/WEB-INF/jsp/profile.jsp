@@ -38,38 +38,34 @@
                         <div class="zm-profile-card zm-profile-section-item zg-clear no-hovercard">
                             <div class="zg-right">
                                 <c:choose>
-                                    <c:when test="${profileUser.followed}">
-                                        <button class="zg-btn zg-btn-unfollow zm-rich-follow-btn small nth-0
-                                    js-follow-user" data-status="1" data-id="$profileUser.user.id">取消关注
-                                        </button>
+                                    <c:when test="${profileUser.get('followed')}">
+                                        <button class="layui-btn layui-btn-primary" onclick="unfollowBtn(${profileUser.get('user').id})">取消关注</button>
                                     </c:when>
                                     <c:otherwise>
-                                        <button class="zg-btn zg-btn-follow zm-rich-follow-btn small nth-0
-                                    js-follow-user" data-id="$profileUser.user.id">关注
-                                        </button>
+                                        <button class="layui-btn" onclick="followBtn(${profileUser.get('user').id})">关注</button>
                                     </c:otherwise>
                                 </c:choose>
                             </div>
-                            <a title="Barty" class="zm-item-link-avatar" href="/user/${profileUser.user.id}">
-                                <img src="${profileUser.user.headUrl}" class="zm-item-img-avatar">
+                            <a title="Barty" class="zm-item-link-avatar" href="/user/${profileUser.get('user').id}">
+                                <img src="${profileUser.get('user').headUrl}" class="zm-item-img-avatar">
                             </a>
                             <div class="zm-list-content-medium">
                                 <h2 class="zm-list-content-title"><a data-tip="p$t$buaabarty"
-                                                                     href="/user/${profileUser.user.id}"
-                                                                     class="zg-link">${profileUser.user.name}</a></h2>
+                                                                     href="/user/${profileUser.get('user').id}"
+                                                                     class="zg-link">${profileUser.get('user').username}</a></h2>
 
                                 <!-- <div class="zg-big-gray">计蒜客教研首席打杂</div> -->
                                 <div class="details zg-gray">
-                                    <a target="_blank" href="/user/${profileUser.user.id}/followers"
-                                       class="zg-link-gray-normal">${profileUser.followerCount}粉丝</a>
+                                    <a target="_blank" href="/user/${profileUser.get('user').id}/followers"
+                                       class="zg-link-gray-normal">${profileUser.get('followerCount')}粉丝</a>
                                     /
-                                    <a target="_blank" href="/user/${profileUser.user.id}/followees"
-                                       class="zg-link-gray-normal">${profileUser.followeeCount}关注</a>
+                                    <a target="_blank" href="/user/${profileUser.get('user').id}/followees"
+                                       class="zg-link-gray-normal">${profileUser.get('followeeCount')}关注</a>
                                     /
-                                    <a target="_blank" href="#" class="zg-link-gray-normal">${profileUser.commentCount}
+                                    <a target="_blank" href="#" class="zg-link-gray-normal">${profileUser.get('commentCount')}
                                         回答</a>
                                     /
-                                    <a target="_blank" href="#" class="zg-link-gray-normal">548 赞同</a>
+                                    <%--<a target="_blank" href="#" class="zg-link-gray-normal">赞同</a>--%>
                                 </div>
                             </div>
                         </div>
@@ -95,9 +91,9 @@
                                 <meta itemprop="ZReactor" data-id="389034" data-meta="">
                                 <div class="feed-item-inner">
                                     <div class="avatar">
-                                        <a title="$!{vo.user.name}" data-tip="p$t$amuro1230" class="zm-item-link-avatar"
-                                           target="_blank" href="https://nowcoder.com/people/amuro1230">
-                                            <img src="$!{vo.user.headUrl}" class="zm-item-img-avatar"></a>
+                                        <a title="${vo.get('user').username}" data-tip="p$t$amuro1230" class="zm-item-link-avatar"
+                                           target="_blank" href="${vo.get('user').headUrl}">
+                                            <img src="${vo.get('user').headUrl}" class="zm-item-img-avatar"></a>
                                     </div>
                                     <div class="feed-main">
                                         <div class="feed-content" data-za-module="AnswerItem">
@@ -105,19 +101,19 @@
                                             <meta itemprop="answer-url-token" content="13174385">
                                             <h2 class="feed-title">
                                                 <a class="question_link" target="_blank"
-                                                   href="/question/$!{vo.question.id}">$!{vo.question.title}</a></h2>
+                                                   href="/discuss/question/detail/${vo.get('question').id}">${vo.get('question').title}</a></h2>
                                             <div class="feed-question-detail-item">
                                                 <div class="question-description-plain zm-editable-content"></div>
                                             </div>
                                             <div class="expandable entry-body">
                                                 <div class="zm-item-vote">
                                                     <a class="zm-item-vote-count js-expand js-vote-count"
-                                                       href="javascript:;" data-bind-votecount="">${vo.followCount}</a>
+                                                       href="javascript:;" data-bind-votecount=""><%--${vo.followCount}--%></a>
                                                 </div>
                                                 <div class="zm-item-answer-author-info">
                                                     <a class="author-link" data-tip="p$b$amuro1230" target="_blank"
-                                                       href="/user/$!{vo.user.id}">$!{vo.user.name}</a>
-                                                    ，$data.format('yyyy-MM-dd HH:mm:ss', $!{vo.question.createdDate})
+                                                       href="/user/${vo.get('user').id}">${vo.get('user').username}</a>
+                                                    ，${vo.get('user').created}
                                                 </div>
                                                 <div class="zm-item-vote-info" data-votecount="4168"
                                                      data-za-module="VoteInfo">
@@ -125,11 +121,8 @@
                                                     <a href="#" class="more text">
                                                         <span class="js-voteCount"></span>&nbsp;人赞同</a></span>
                                                 </div>
-                                                <div class="zm-item-rich-text expandable js-collapse-body"
-                                                     data-resourceid="123114" data-action="/answer/content"
-                                                     data-author-name="李淼"
-                                                     data-entry-url="/question/19857995/answer/13174385">
-                                                    <div class="zh-summary summary clearfix">${vo.question.content}</div>
+                                                <div class="zm-item-rich-text expandable js-collapse-body">
+                                                    <div class="zh-summary summary clearfix">${vo.get('question').content}</div>
                                                 </div>
                                             </div>
                                             <div class="feed-meta">
@@ -138,9 +131,9 @@
                                                         <a data-follow="q:link" class="follow-link zg-follow meta-item"
                                                            href="javascript:;" id="sfb-123114">
                                                             <i class="z-icon-follow"></i>关注问题</a>
-                                                        <a href="#" name="addcomment"
+                                                        <a href="/discuss/question/detail/${vo.get('question').id}" name="addcomment"
                                                            class="meta-item toggle-comment js-toggleCommentBox">
-                                                            <i class="z-icon-comment"></i>${vo.question.commentCount}
+                                                            <i class="z-icon-comment"></i>${vo.get('question').comment_count}
                                                             条评论</a>
 
 
@@ -161,143 +154,7 @@
                 </div>
             </div>
         </div>
-
-
-        <!-- Start of Footer -->
-        <footer id="footer-wrapper">
-            <div id="footer" class="container">
-                <div class="row">
-
-                    <div class="span3">
-                        <section class="widget">
-                            <h3 class="title">How it works</h3>
-                            <div class="textwidget">
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-                                    euismod
-                                    tincidunt ut laoreet dolore magna aliquam erat volutpat. </p>
-                                <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit
-                                    lobortis
-                                    nisl
-                                    ut aliquip ex ea commodo consequat. </p>
-                            </div>
-                        </section>
-                    </div>
-
-                    <div class="span3">
-                        <section class="widget">
-                            <h3 class="title">Categories</h3>
-                            <ul>
-                                <li>
-                                    <a href="#" title="Lorem ipsum dolor sit amet,">Advanced Techniques</a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Lorem ipsum dolor sit amet,">Designing in WordPress</a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Lorem ipsum dolor sit amet,">Server &amp; Database</a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Lorem ipsum dolor sit amet, ">Theme Development</a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Lorem ipsum dolor sit amet,">Website Dev</a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Lorem ipsum dolor sit amet,">WordPress for Beginners</a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Lorem ipsum dolor sit amet, ">WordPress Plugins</a>
-                                </li>
-                            </ul>
-                        </section>
-                    </div>
-
-                    <div class="span3">
-                        <section class="widget">
-                            <h3 class="title">Latest Tweets</h3>
-                            <div id="twitter_update_list">
-                                <ul>
-                                    <li>No Tweets loaded !</li>
-                                </ul>
-                            </div>
-
-                        </section>
-                    </div>
-
-                    <div class="span3">
-                        <section class="widget">
-                            <h3 class="title">Flickr Photos</h3>
-                            <div class="flickr-photos" id="basicuse">
-                            </div>
-                        </section>
-                    </div>
-
-                </div>
-            </div>
-            <!-- end of #footer -->
-
-            <!-- Footer Bottom -->
-            <div id="footer-bottom-wrapper">
-                <div id="footer-bottom" class="container">
-                    <div class="row">
-                        <div class="span6">
-                            <p class="copyright">
-                                Copyright © 2013. All Rights Reserved by KnowledgeBase.Collect from
-                                <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a>
-                            </p>
-                        </div>
-                        <div class="span6">
-                            <!-- Social Navigation -->
-                            <ul class="social-nav clearfix">
-                                <li class="linkedin">
-                                    <a target="_blank" href="#"></a>
-                                </li>
-                                <li class="stumble">
-                                    <a target="_blank" href="#"></a>
-                                </li>
-                                <li class="google">
-                                    <a target="_blank" href="#"></a>
-                                </li>
-                                <li class="deviantart">
-                                    <a target="_blank" href="#"></a>
-                                </li>
-                                <li class="flickr">
-                                    <a target="_blank" href="#"></a>
-                                </li>
-                                <li class="skype">
-                                    <a target="_blank" href="skype:#?call"></a>
-                                </li>
-                                <li class="rss">
-                                    <a target="_blank" href="#"></a>
-                                </li>
-                                <li class="twitter">
-                                    <a target="_blank" href="#"></a>
-                                </li>
-                                <li class="facebook">
-                                    <a target="_blank" href="#"></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End of Footer Bottom -->
-
-        </footer>
-        <!-- End of Footer -->
-
-        <a href="#top" id="scroll-top"></a>
-
     </div>
-    <!-- script -->
-    <script type='text/javascript' src='/js/jquery-1.8.3.min.js'></script>
-    <script type='text/javascript' src='/js/jquery.easing.1.3.js'></script>
-    <script type='text/javascript' src='/js/prettyphoto/jquery.prettyPhoto.js'></script>
-    <script type='text/javascript' src='/js/jflickrfeed.js'></script>
-    <script type='text/javascript' src='/js/jquery.liveSearch.js'></script>
-    <script type='text/javascript' src='/js/jquery.form.js'></script>
-    <script type='text/javascript' src='/js/jquery.validate.min.js'></script>
-    <script type='text/javascript' src='/js/custom.js'></script>
     <script type="text/javascript" src="/framework/jquery.min.js"></script>
     <script type="text/javascript" src="/layui/layui.js"></script>
 
@@ -311,6 +168,28 @@
                 layer.msg(elem.text());
             });
         });
+        function followBtn(userId) {
+            $.post("/followUser",{"userId":userId},function (data) {
+                if (data.code == 200){
+                    window.location.reload();
+                }else if (data.code == 999){
+                    $(location).attr('href', 'http://localhost:8081/toLogin?callback='+data.result);
+                }else {
+                    alert(data.msg);
+                }
+            });
+        }
+        function unfollowBtn(userId) {
+            $.post("/unfollowUser",{"userId":userId},function (data) {
+                if (data.code == 200){
+                    window.location.reload();
+                }else if (data.code == 999){
+                    $(location).attr('href', 'http://localhost:8081/toLogin?callback='+data.result);
+                }else {
+                    alert(data.msg);
+                }
+            });
+        }
     </script>
 </body>
 

@@ -10,28 +10,12 @@
             <a href="/">首页</a>
         </li>
         <li class="layui-nav-item">
-            <a href="/video">教学视频</a>
-        </li>
-        <li class="layui-nav-item">
-            <a href="">在线测评</a>
+            <a href="/video/">教学视频</a>
         </li>
         <li class="layui-nav-item">
             <a href="/discuss/index">讨论区</a>
         </li>
-        <li class="layui-nav-item">
-            <a href="javascript:;">其它系统</a>
-            <dl class="layui-nav-child">
-                <dd>
-                    <a href="">邮件管理</a>
-                </dd>
-                <dd>
-                    <a href="">消息管理</a>
-                </dd>
-                <dd>
-                    <a href="">授权管理</a>
-                </dd>
-            </dl>
-        </li>
+
     </ul>
     <ul class="layui-nav layui-layout-right">
         <c:choose>
@@ -45,19 +29,28 @@
             </c:when>
             <c:otherwise>
                 <li class="layui-nav-item">
-                    <a href="/user/toMessage">消息</a>
+                    <a href="/feed/pullfeeds">新鲜事</a>
                 </li>
                 <li class="layui-nav-item">
-                    <a href="/toRegister">注册</a>
+                    <a href="/user/toMessage">消息</a>
                 </li>
+                <%--<li class="layui-nav-item">
+                    <a href="/toRegister">注册</a>
+                </li>--%>
                 <li class="layui-nav-item">
                     <a href="/user/${user.id}">${user.username}</a>
                     <dl class="layui-nav-child">
                         <dd>
-                            <a href="/follow/">社交管理</a>
+                            <a href="/user/${user.id}/followers">粉丝列表</a>
+                        </dd>
+                        <dd>
+                            <a href="/user/${user.id}/followees">关注列表</a>
                         </dd>
                         <dd>
                             <a href="/user/${user.id}">我的主页</a>
+                        </dd>
+                        <dd>
+                            <a href="/user/toEditUser/${user.id}">资料修改</a>
                         </dd>
                     </dl>
                 </li>

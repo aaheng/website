@@ -7,14 +7,17 @@ import cn.website.common.utils.JedisAdapter;
 import cn.website.common.utils.RedisKeyUtils;
 import cn.website.page.pojo.DiscussQuestion;
 import cn.website.page.pojo.EntityType;
+import cn.website.page.pojo.Feed;
 import cn.website.page.pojo.User;
 import cn.website.service.discuss.DiscussQuestionService;
+import cn.website.service.feed.FeedService;
 import cn.website.service.follow.FollowService;
 import cn.website.service.user.UserService;
 import com.alibaba.fastjson.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 /**
@@ -28,7 +31,8 @@ public class FeedHandler implements EventHandler {
     @Autowired
     UserService userService;
 
-
+    @Autowired
+    FeedService feedService;
 
     @Autowired
     JedisAdapter jedisAdapter;
@@ -45,7 +49,7 @@ public class FeedHandler implements EventHandler {
             return null;
         }
         map.put("userId", String.valueOf(actor.getId()));
-        //map.put("userHead", actor.getHeadUrl());
+        map.put("userHead", actor.getHeadUrl());
         map.put("userName", actor.getUsername());
 
         if (model.getType() == EventType.COMMENT ||
@@ -64,12 +68,13 @@ public class FeedHandler implements EventHandler {
     @Override
     public void doHandle(EventModel model) {
         // 为了测试，把model的userId随机一下
-        Random r = new Random();
-        model.setActorId(1+r.nextInt(10));
 
         // 构造一个新鲜事
-       /* Feed feed = new Feed();
-        feed.setCreatedDate(new Date());
+        Feed feed = new Feed();
+        SimpleDateFormat sdf=new SimpleDateFormat("yyyy-MM-dd");
+        Date date=new Date();
+        String str=sdf.format(date);
+        feed.setCreate_time(str);
         feed.setType(model.getType().getValue());
         feed.setUserId(model.getActorId());
         feed.setData(buildFeedData(model));
@@ -88,7 +93,7 @@ public class FeedHandler implements EventHandler {
             String timelineKey = RedisKeyUtils.getTimelineKey(follower);
             jedisAdapter.lpush(timelineKey, String.valueOf(feed.getId()));
             // 限制最长长度，如果timelineKey的长度过大，就删除后面的新鲜事
-        }*/
+        }
     }
 
     @Override

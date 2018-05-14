@@ -39,4 +39,15 @@
     <select id="getInsertId" resultType="Integer">
         SELECT LAST_INSERT_ID()
     </select>
+    <update id="editUser" parameterType="User">
+        UPDATE user SET
+        username=#{username},
+        password = #{password},
+        salt=#{salt},
+        phone=#{phone},
+        sex=#{sex},
+        email=#{email},
+        head_url=#{headUrl}
+        where id = #{id}
+    </update>
 </mapper>

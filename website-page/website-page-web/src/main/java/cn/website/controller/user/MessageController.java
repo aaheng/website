@@ -9,9 +9,14 @@ import cn.website.page.pojo.ViewObject;
 import cn.website.service.user.MessageService;
 import cn.website.service.user.UserService;
 import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
@@ -21,6 +26,7 @@ import java.util.List;
 @Controller
 @RequestMapping("/user")
 public class MessageController {
+    private static final Logger logger = LoggerFactory.getLogger(MessageController.class);
     @Autowired
     private MessageService messageService;
     @Autowired
@@ -60,11 +66,12 @@ public class MessageController {
         message.setTo_id(user.getId());
         message.setFrom_id(currentUser.getId());
         message.setContent(content);
+        message.setConversation_id(message.getConversationId());
         SResponse result = messageService.insertMessage(message);
         return result;
     }
 
-    @RequestMapping("/message/list")
+    @RequestMapping("/toMessage")
     public String messageList(HttpServletRequest request){
         User user = hostHolder.get();
         if (user == null){
@@ -78,10 +85,29 @@ public class MessageController {
             viewObject.set("message",message);
             Integer targetId = message.getFrom_id().equals(currentUserId)?message.getTo_id():message.getFrom_id();
             viewObject.set("user",userService.getUserById(targetId));
+            viewObject.set("unread", messageService.getConversationUnreadCount(user.getId(), message.getConversationId()));
             vos.add(viewObject);
         }
         request.setAttribute("vos",vos);
-        return "letter";
+        return "message";
+    }
+
+    @RequestMapping(path = {"/msg/detail"}, method = {RequestMethod.GET})
+    public String getConversationDetail(Model model, @RequestParam("conversationId") String conversationId) {
+        try {
+            List<Message> messageList = messageService.getConversationDetail(conversationId, 0, 10);
+            List<ViewObject> messages = new ArrayList<ViewObject>();
+            for (Message message : messageList) {
+                ViewObject vo = new ViewObject();
+                vo.set("message", message);
+                vo.set("user", userService.getUserById(message.getFrom_id()));
+                messages.add(vo);
+            }
+            model.addAttribute("messages", messages);
+        } catch (Exception e) {
+            logger.error("获取详情失败" + e.getMessage());
+        }
+        return "messageDetail";
     }
 
     @RequestMapping("/toAddMessage")
@@ -89,9 +115,5 @@ public class MessageController {
         return "/addMessage";
     }
 
-    @RequestMapping("/toMessage")
-    public String toMessage(){
-        return "message";
-    }
 
 }

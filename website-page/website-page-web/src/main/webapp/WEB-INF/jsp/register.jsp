@@ -44,9 +44,13 @@
             <div class="layui-form-item">
                 <label class="layui-form-label">头像</label>
                 <div class="layui-upload">
-                    <button type="button" class="layui-btn"
-                            id="uploadBtn" style="float: left">选择图片
-                    </button>
+                    <%--<form action="/upload/uploadImage" enctype="multipart/form-data">--%>
+                        <input type="file" id="btn_file" style="display:none" onchange="changeImage()" name="file">
+                        <button type="button" class="layui-btn"
+                                id="uploadBtn" style="float: left" onclick="upLoadImage()">选择图片
+                        </button>
+                    <%--</form>--%>
+
                     <span>
                         <a href="javascript:void(0);" id="headImgHref" target="_blank">
                             <img id="headerImg" src="" style="display: none;">
@@ -63,13 +67,13 @@
                     </div>
                 </div>
             </div>
-            <%--<div class="layui-form-item">
+            <div class="layui-form-item">
                 <label class="layui-form-label">身份</label>
                 <div class="layui-input-block">
                     <input type="radio" name="status" value="1" title="教师">
                     <input type="radio" name="status" value="2" title="学生" checked>
                 </div>
-            </div>--%>
+            </div>
             <div class="layui-form-item">
                 <label class="layui-form-label">性别</label>
                 <div class="layui-input-block">
@@ -81,6 +85,7 @@
             <div class="layui-form-item layui-input-block">
                 <button class="layui-btn" lay-submit="" lay-filter="registerBtn">提交</button>
                 <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                <a href="/toLogin">已有账号?登录</a>
             </div>
         </form>
     </div>
@@ -89,13 +94,68 @@
 <script type="text/javascript" src="/framework/jquery.min.js"></script>
 <script src="/layui/layui.js"></script>
 <script>
+    function upLoadImage() {
+        $("#btn_file").click();
+    }
+    function changeImage() {
+        var fileObj = document.getElementById("btn_file").files[0]; // js 获取文件对象
+        if (typeof (fileObj) == "undefined" || fileObj.size <= 0) {
+            alert("请选择图片");
+            return;
+        }
+        var formFile = new FormData();
+        //formFile.append("action", "UploadVMKImagePath");
+        formFile.append("file", fileObj); //加入文件对象
+
+        var data = formFile;
+        $.ajax({
+            url: "/upload/uploadImage",
+            data: data,
+            type: "Post",
+            dataType: "json",
+            cache: false,//上传文件无需缓存
+            processData: false,//用于对data参数进行序列化处理 这里必须false
+            contentType: false, //必须
+            success: function (res) {
+                if (res.code == 200) {
+                    layui.use(['layer'],function () {
+                        var layer = layui.layer;
+                        layer.msg("上传成功", {
+                            offset: '50%',
+                            icon: 1,
+                            time: 2000
+                        });
+                    });
+                    $("#headerImg").attr("src", res.result.imgPath);
+                    $("#headerImg").attr("style","display:block;width:50px;height:50px;padding-left: 10px");
+                    $("#head_url").val(res.result.imgPath);
+                    $("#headImgHref").attr("href",res.result.imgPath);
+                } else {
+                    layui.use(['layer'],function () {
+                        var layer = layui.layer;
+                        layer.msg(data.msg, {
+                            offset: '50%',
+                            icon: 2,
+                            time: 2000
+                        });
+                    });
+
+                }
+            },
+        })
+
+    }
+</script>
+
+
+<script>
     layui.use(['element', 'layer','form','upload'], function () {
         var element = layui.element,//导航的hover效果、二级菜单等功能，需要依赖element模块
             layer = layui.layer,
             upload = layui.upload,
             form = layui.form;
 
-        form.on('submit(registerBtn)', function(data) {
+        form.on('submit(registerBtn)', function (data) {
             var username = $("#username").val();
             var password = $("#password").val();
             var phone = $("#phone").val();
@@ -108,18 +168,18 @@
                 sex = 0;
             }
             var params = {
-                username : username,
-                password : password,
-                phone : phone,
-                headUrl : head_url,
-                email : email,
-                sex : sex
+                username: username,
+                password: password,
+                phone: phone,
+                headUrl: head_url,
+                email: email,
+                sex: sex
             };
-            $.post("/register",params,function (data) {
-                if(data.code == 200){
+            $.post("/register", params, function (data) {
+                if (data.code == 200) {
                     $(location).attr('href', 'http://localhost:8081');
                     form.render();
-                }else {
+                } else {
                     layer.msg(data.msg, {
                         offset: '50%',
                         icon: 2,
@@ -131,8 +191,9 @@
             });
             form.render();
         });
+    });
 
-        upload.render({
+        /*upload.render({
             elem: '#uploadBtn'
             , url: '/upload/uploadImage'
             ,field : "file"
@@ -150,8 +211,7 @@
                     });
                 }
             }
-        });
-    });
+        });*/
 </script>
 <%--<script src="/js/website/user/upload.js"/>--%>
 

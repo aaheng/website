@@ -40,13 +40,18 @@ public class PassportInterceptor implements HandlerInterceptor {
                 LoginToken loginToken = loginTokenMapper.getByToken(token);
                 //查看是否过期,
                 if (loginToken.getExpired().before(new Date()) || loginToken.getStatus() == 1) {
+                    hostHolder.clear();
                     return true;
                 }
                 //没有过期,根据里面的userId查看相关用户
                 User user = userMapper.getUserById(loginToken.getUser_id());
                 //将这个用户和当前线程绑定
                 hostHolder.set(user);
+            }else {
+                hostHolder.clear();
             }
+        }else {
+            hostHolder.clear();
         }
         return true;
     }

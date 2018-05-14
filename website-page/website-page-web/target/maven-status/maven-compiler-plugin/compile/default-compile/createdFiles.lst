@@ -12,6 +12,7 @@ cn\website\controller\user\MessageController.class
 cn\website\controller\BaseController.class
 cn\website\controller\index\IndexController.class
 cn\website\controller\upload\UploadController.class
+cn\website\controller\common\CommonController.class
 cn\website\controller\discuss\DiscussController.class
 cn\website\controller\discuss\DiscussCommentController.class
 cn\website\controller\login\LoginController.class

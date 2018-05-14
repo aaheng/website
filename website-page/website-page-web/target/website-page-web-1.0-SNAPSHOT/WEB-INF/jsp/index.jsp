@@ -17,6 +17,16 @@
     <link rel='stylesheet' id='main-css-css' href='/css/main5152.css?ver=1.0' type='text/css' media='all'/>
     <link rel='stylesheet' id='custom-css-css' href='/css/custom5152.html?ver=1.0' type='text/css' media='all'/>
     <link rel="stylesheet" href="/css/index.css">
+
+
+    <link rel="stylesheet" href="/css/video/zerogrid.css">
+    <link rel="stylesheet" href="/layui/css/layui.css">
+    <link rel="stylesheet" href="/css/video/style.css">
+    <!-- Owl Carousel Assets -->
+    <link href="/css/video/owl.carousel.css" rel="stylesheet">
+    <link href="/css/video/owl.theme.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
     <style>
         .zm-item-answer-author-info a.collapse {
             margin-top: 0
@@ -28,7 +38,6 @@
 <div class="layui-layout layui-layout-admin">
     <%--header--%>
     <jsp:include page="header.jsp"/>
-
 
     <div class="zu-global-notify" id="zh-global-message" style="display:none">
         <div class="zg-wrap">
@@ -42,12 +51,43 @@
     <div class="zg-wrap zu-main clearfix " role="main">
         <div class="zu-main-content">
             <div class="zu-main-content-inner">
+                <div class="zg-section" id="zh-home-list-title1">
+                    <i class="zg-icon zg-icon-feedlist"></i>视频列表
+                    <input type="hidden" id="is-topstory1">
+                    <%--<span class="zg-right zm-noti-cleaner-setting" style="list-style:none">
+                        <a href="" class="zg-link-gray-normal">
+                            <i class="zg-icon zg-icon-settings"></i>设置</a></span>--%>
+                </div>
+                <section class="vid-tv">
+                    <div>
+                        <c:forEach var="video" items="${videoList}" varStatus="status">
+                            <c:choose>
+                                <c:when test="${status.index < 3}">
+                                    <div class="zoom-container"
+                                         style="width: 260px;height: 300px;padding-left: 10px">
+                                        <a href="/video/detail/${video.id}">
+                                            <video width="200" height="200" controls>
+                                                <source src="/${video.path}" type="video/mp4">
+                                            </video>
+                                        </a>
+                                        <h3 class="vid-name"><a href="#">${video.titleOrig}</a></h3>
+                                        <div class="info">
+                                            <h5>By <a href="#">Kelvin</a></h5>
+                                            <span><i class="fa fa-calendar"></i>${video.uploadTime}</span>
+                                            <span><i class="fa fa-heart"></i>1,200</span>
+                                        </div>
+                                    </div>
+                                </c:when>
+                            </c:choose>
+                        </c:forEach>
+                    </div>
+                </section>
                 <div class="zg-section" id="zh-home-list-title">
                     <i class="zg-icon zg-icon-feedlist"></i>最新动态
                     <input type="hidden" id="is-topstory">
-                    <span class="zg-right zm-noti-cleaner-setting" style="list-style:none">
+                    <%--<span class="zg-right zm-noti-cleaner-setting" style="list-style:none">
                         <a href="https://nowcoder.com/settings/filter" class="zg-link-gray-normal">
-                            <i class="zg-icon zg-icon-settings"></i>设置</a></span>
+                            <i class="zg-icon zg-icon-settings"></i>设置</a></span>--%>
                 </div>
                 <div class="zu-main-feed-con navigable" data-feedtype="topstory" id="zh-question-list"
                      data-widget="navigable"
@@ -63,37 +103,37 @@
                                         <a title="赵永峰" data-tip="p$t$zhao-yong-feng" class="zm-item-link-avatar"
                                            target="_blank"
                                            href="/user/${vo.get('user').id}">
-                                            <img src="/images/res/b3aadf89405941b05a5ce00fb06f8281_m.jpg"
+                                            <img src="${vo.get('user').headUrl}"
                                                  class="zm-item-img-avatar"></a>
                                     </div>
                                     <div class="feed-main">
                                         <div class="feed-content" data-za-module="PostItem">
                                             <meta itemprop="post-id" content="113477">
                                             <meta itemprop="post-url-token" content="19831487">
+                                            <div class="author-info">
+                                                <a href="/user/${vo.get("user").id}"
+                                                   data-tip="p$t$zhao-yong-feng"
+                                                   class="name">${vo.get("user").username}</a>
+                                            </div>
                                             <h5 class="feed-title">
                                                 <a target="_blank" class="post-link"
-                                                   href="/discuss/question/detail/${vo.get('question').id}"></a>${vo.get('question').title}
+                                                   href="/discuss/question/detail/${vo.get('question').id}">${vo.get('question').title}</a>
                                             </h5>
                                             <div class="entry-body post-body js-collapse-body">
                                                 <div class="zm-item-vote">
                                                     <a class="zm-item-vote-count js-expand js-vote-count" href="#"
-                                                       data-bind-votecount="">1082</a></div>
+                                                       data-bind-votecount="">${vo.get("followCount")}</a></div>
                                                 <div class="zm-votebar" data-za-module="VoteBar">
                                                     <button class="up" aria-pressed="false" title="赞同">
                                                         <i class="icon vote-arrow"></i>
                                                         <span class="count">1082</span>
                                                         <span class="label sr-only">赞同</span></button>
                                                 </div>
-                                                <div class="author-info">
-                                                    <a href="/user/${vo.get("user").id}"
-                                                       data-tip="p$t$zhao-yong-feng"
-                                                       class="name">${vo.get("user").username}</a>
-                                                </div>
                                                 <div class="zm-item-vote-info" data-votecount="1082"
                                                      data-za-module="VoteInfo">
                                                 <span class="voters text">
                                                     <a href="#" class="more text">
-                                                        <span class="js-voteCount">1082</span>&nbsp;人赞</a></span>
+                                                        <span class="js-voteCount">${vo.get("followCount")}</span>&nbsp;人赞</a></span>
                                                 </div>
                                                 <div class="post-content">
                                                     <div class="zh-summary summary clearfix">
@@ -102,7 +142,7 @@
                                                     <p>
                                                         <a class="post-link entry-link" target="_blank"
                                                            href="javascript:void(0);">
-                                                            ${vo.get('question').create_time}
+                                                                ${vo.get('question').create_time}
                                                         </a>
                                                     </p>
                                                 </div>
@@ -113,10 +153,10 @@
                                                         <a data-follow="c:link" class="zg-follow meta-item" href="#"
                                                            id="cl-2180">
 
-                                                        <a href="/discuss/question/detail/${vo.get('question').id}"
-                                                           class="meta-item toggle-comment js-toggleCommentBox">
-                                                            <i class="z-icon-comment"></i>${vo.get('question').comment_count}
-                                                            条评论</a>
+                                                            <a href="/discuss/question/detail/${vo.get('question').id}"
+                                                               class="meta-item toggle-comment js-toggleCommentBox">
+                                                                <i class="z-icon-comment"></i>${vo.get('question').comment_count}
+                                                                条评论</a>
                                                         </a>
                                                     </div>
                                                 </div>

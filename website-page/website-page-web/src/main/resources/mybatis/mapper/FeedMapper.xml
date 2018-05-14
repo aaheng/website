@@ -6,7 +6,7 @@
     <sql id="selector">id,type,user_id as userId,date_format(create_time,'%Y-%m-%d %H:%i:%s') as create_time,data</sql>
 
 	<!-- 添加信息 -->
-	<insert id="insertFeed" parameterType="Feed">
+	<insert id="addFeed" parameterType="Feed">
 		insert into feed (user_id, data, create_time, type,is_delete)
 		values (#{userId},#{data},now(),#{type},0)
 	</insert>

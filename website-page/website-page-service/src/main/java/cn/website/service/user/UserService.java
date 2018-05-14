@@ -69,4 +69,11 @@ public class UserService {
         return userMapper.getUserByUsername(username);
     }
 
+    public boolean editUser(User user){
+        user.setSalt(UUID.randomUUID().toString().substring(0, 5));
+        user.setPassword(DigestUtils.md5DigestAsHex((user.getPassword() + user.getSalt()).getBytes()));
+        Integer result = userMapper.editUser(user);
+        return result > 0 ? true : false;
+    }
+
 }

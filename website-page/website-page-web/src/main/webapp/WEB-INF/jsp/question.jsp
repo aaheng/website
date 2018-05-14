@@ -41,8 +41,8 @@
                     <div class="zm-editable-content">${question.content}</div>
                 </div>
                 <div class="zm-side-section">
-                    <div class="zm-side-section-inner" id="zh-question-side-header-wrap">
-                        <button data-follow="q:m:button" class="follow-button zg-follow zg-btn-green" data-id="6727688">
+                    <%--<div class="zm-side-section-inner" id="zh-question-side-header-wrap">
+                        <button class="follow-button zg-follow zg-btn-green" onclick="followQuestionBtn(${question.id})">
                             关注问题
                         </button>
                         <div class="zh-question-followers-sidebar">
@@ -51,13 +51,40 @@
                                     <strong>9</strong></a>人关注该问题
                             </div>
                             <div class="list zu-small-avatar-list zg-clear">
-                                <%--<a data-tip="p$b$yi-yi-98-91-99" class="zm-item-link-avatar" href=""
+                                &lt;%&ndash;<a data-tip="p$b$yi-yi-98-91-99" class="zm-item-link-avatar" href=""
                                    data-original_title="奕奕">
                                     <img src="/images/res/6ceea810748d179f57cac0baa5cf9592_s.jpg"
                                          class="zm-item-img-avatar"></a>
                                 <a data-tip="p$b$wang-wu-29-54" class="zm-item-link-avatar" href=""
                                    data-original_title="王五">
-                                    <img src="/images/res/da8e974dc_s.jpg" class="zm-item-img-avatar"></a>--%>
+                                    <img src="/images/res/da8e974dc_s.jpg" class="zm-item-img-avatar"></a>&ndash;%&gt;
+                            </div>
+                        </div>
+                    </div>--%>
+                    <div class="zm-side-section-inner" id="zh-question-side-header-wrap">
+                        <c:choose>
+                            <c:when test="${followed}">
+                                <button class="follow-button zg-follow zg-btn-white js-follow-question" onclick="unfollowQuestionBtn(${question.id})">
+                                    取消关注
+                                </button>
+                            </c:when>
+                            <c:otherwise>
+                                <button class="follow-button zg-follow zg-btn-green js-follow-question" onclick="followQuestionBtn(${question.id})">
+                                    关注问题
+                                </button>
+                            </c:otherwise>
+                        </c:choose>
+                        <div class="zh-question-followers-sidebar">
+                            <div class="zg-gray-normal">
+                                <a href="javascript:void(0);"><strong
+                                        class="js-user-count">${followUsers.size()}</strong></a>人关注该问题
+                            </div>
+                            <div class="list zu-small-avatar-list zg-clear js-user-list">
+                                <c:forEach var="vo" items="${followUsers}">
+                                    <a class="zm-item-link-avatar" href="/user/${vo.get('id')}">
+                                        <img src="${vo.get('headUrl')}"
+                                             class="zm-item-img-avatar"></a>
+                                </c:forEach>
                             </div>
                         </div>
                     </div>
@@ -102,7 +129,7 @@
                                     <button class="up js-like" title="赞同" onclick="upLike(${vo.get('comment').id})"
                                             id="likeButton">
                                         <i class="icon vote-arrow"></i>
-                                        <span class="count js-voteCount">0</span>
+                                        <span class="count js-voteCount">${vo.get('likeCount')}</span>
                                         <span class="label sr-only">赞同</span>
                                     </button>
                                     <button class="down js-dislike" title="反对，不会显示你的姓名"
@@ -126,12 +153,13 @@
                             </div>
                             <div class="answer-head">
                                 <div class="zm-item-answer-author-info">
-                                    <a class="zm-item-link-avatar avatar-link" href="${vo.get('user').headUrl}" target="_blank"
+                                    <a class="zm-item-link-avatar avatar-link" href="/user/${vo.get('user').id}"
+                                       target="_blank"
                                        data-tip="p$t$yingxiaodao">
-                                            <img src="${vo.get('user').headUrl}"
-                                                 class="zm-list-avatar avatar"></a>
+                                        <img src="${vo.get('user').headUrl}"
+                                             class="zm-list-avatar avatar"></a>
                                     <a class="author-link" data-tip="p$t$yingxiaodao" target="_blank"
-                                       href="">${vo.get("user").username}</a>
+                                       href="/user/${vo.get('user').id}">${vo.get("user").username}</a>
                                     <span title="" class="bio"></span></div>
                                 <div class="zm-item-vote-info" data-votecount="28" data-za-module="VoteInfo">
                                         <%--<span class="voters text">
@@ -190,7 +218,7 @@
                                     </div>
                                 </div>
                                 <div class="zm-command clearfix">
-                                    <button id="addCommentBtn" class="layui-btn-primary">发布回答</button
+                                    <button id="addCommentBtn" class="layui-btn-primary">发布回答</button>
                                 </div>
                             </div>
 
@@ -231,10 +259,10 @@
                         async: true,
                         url: "/discuss/comment/add",
                         success: function (data) {
-                            if (data.code == 999){
-                                $(location).attr('href', 'http://localhost:8081/toLogin?callback='+data.result);
+                            if (data.code == 999) {
+                                $(location).attr('href', 'http://localhost:8081/toLogin?callback=' + data.result);
                                 //window.location.href = "localhost:8081/toLogin";
-                            }else if (data.code == 200) {
+                            } else if (data.code == 200) {
                                 layui.use(['layer'], function () {
                                     var layer = layui.layer;
                                     layer.msg("添加成功", {
@@ -269,6 +297,28 @@
                 layer.msg(elem.text());
             });
         });
+        function followQuestionBtn(id) {
+            $.post("/followQuestion",{"questionId":id},function (data) {
+                if (data.code == 200){
+                    window.location.reload();
+                }else if (data.code == 999){
+                    $(location).attr('href', 'http://localhost:8081/toLogin?callback='+data.result);
+                }else {
+                    alert(data.msg);
+                }
+            });
+        }
+        function unfollowQuestionBtn(id) {
+            $.post("/unfollowQuestion",{"questionId":id},function (data) {
+                if (data.code == 200){
+                    window.location.reload();
+                }else if (data.code == 999){
+                    $(location).attr('href', 'http://localhost:8081/toLogin?callback='+data.result);
+                }else {
+                    alert(data.msg);
+                }
+            });
+        }
     </script>
 </body>
 </html>

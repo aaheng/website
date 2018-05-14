@@ -8,7 +8,7 @@
 	<!-- 添加 -->
 	<insert id="insertToken" parameterType="LoginToken">
 		insert into login_token (user_id,token,status,expired)
-		values (#{user_id},#{token},0,#{expired})
+		values (#{user_id},#{token},#{status},#{expired})
 	</insert>
 
     <select id="getByToken" parameterType="String" resultType="LoginToken">

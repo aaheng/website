@@ -17,7 +17,7 @@ public class LoginRequiredInterceptor implements HandlerInterceptor {
         User user = hostHolder.get();
         if (user == null){
             //跳转到登录页面
-            httpServletResponse.sendRedirect("/login?callback=" + httpServletRequest.getRequestURI());
+            httpServletResponse.sendRedirect("/toLogin");
             return false;
         }
         return true;

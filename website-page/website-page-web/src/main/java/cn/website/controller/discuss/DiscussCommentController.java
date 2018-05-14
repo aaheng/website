@@ -1,5 +1,8 @@
 package cn.website.controller.discuss;
 
+import cn.website.common.async.EventModel;
+import cn.website.common.async.EventProducer;
+import cn.website.common.async.EventType;
 import cn.website.common.pojo.Code;
 import cn.website.common.pojo.SResponse;
 import cn.website.page.pojo.EntityType;
@@ -24,6 +27,8 @@ public class DiscussCommentController {
     private DiscussQuestionService discussQuestionService;
     @Autowired
     private HostHolder hostHolder;
+    @Autowired
+    private EventProducer eventProducer;
 
     @RequestMapping("/comment/add")
     @ResponseBody
@@ -36,6 +41,8 @@ public class DiscussCommentController {
             return resp;
         }
         resp = discussCommentService.addComment(content, questionId);
+        eventProducer.fireEvent(new EventModel().setType(EventType.COMMENT).setActorId(hostHolder.get().getId())
+                .setEntityId(questionId));
         return resp;
     }
 

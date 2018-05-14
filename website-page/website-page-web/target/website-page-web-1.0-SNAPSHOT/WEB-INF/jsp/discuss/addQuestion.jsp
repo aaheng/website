@@ -87,6 +87,18 @@
                                 parent.layer.close(index);
                             });
                         });
+                    }else if (data.code == 999){
+                        layui.use(['layer'], function () {
+                            var layer = layui.layer;
+                            layer.alert("用户未登录", {
+                                offset: '20%',
+                                icon: 2
+                            }, function () {
+                                window.parent.location.reload();
+                                var index = parent.layer.getFrameIndex(window.name);
+                                parent.layer.close(index);
+                            });
+                        });
                     }
                     else {
                         layui.use(['layer'], function () {

@@ -5,9 +5,6 @@
 <head>
     <meta charset="utf-8">
     <title>layui</title>
-    <meta name="renderer" content="webkit">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="/layui/css/layui.css" media="all">
     <!-- 注意：如果你直接复制所有代码到本地，上述css路径需要改成你本地的 -->
 </head>
@@ -19,20 +16,20 @@
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 用户注册
         </div>
         <br/>
-        <form class="layui-form" action="/register" method="post">
+        <form class="layui-form">
             <div class="layui-form-item">
                 <label class="layui-form-label">用户名</label>
                 <div class="layui-input-inline">
-                    <input type="text" id="username" required lay-verify="required" placeholder="请输入用户名"
-                           autocomplete="off"
+                    <input type="text" id="username" lay-verify="required" placeholder="请输入用户名"
+                           autocomplete="new-password"
                            class="layui-input">
                 </div>
             </div>
             <div class="layui-form-item">
                 <label class="layui-form-label">密码</label>
                 <div class="layui-input-inline">
-                    <input type="password" id="password" required lay-verify="required" placeholder="请输入密码"
-                           autocomplete="off" class="layui-input">
+                    <input type="password" id="password" lay-verify="required" placeholder="请输入密码"
+                           autocomplete="new-password" class="layui-input">
                 </div>
             </div>
             <div class="layui-form-item">
@@ -47,9 +44,13 @@
             <div class="layui-form-item">
                 <label class="layui-form-label">头像</label>
                 <div class="layui-upload">
-                    <button type="button" class="layui-btn"
-                            id="uploadBtn" style="float: left">选择图片
-                    </button>
+                    <%--<form action="/upload/uploadImage" enctype="multipart/form-data">--%>
+                        <input type="file" id="btn_file" style="display:none" onchange="changeImage()" name="file">
+                        <button type="button" class="layui-btn"
+                                id="uploadBtn" style="float: left" onclick="upLoadImage()">选择图片
+                        </button>
+                    <%--</form>--%>
+
                     <span>
                         <a href="javascript:void(0);" id="headImgHref" target="_blank">
                             <img id="headerImg" src="" style="display: none;">
@@ -66,13 +67,13 @@
                     </div>
                 </div>
             </div>
-            <%--<div class="layui-form-item">
+            <div class="layui-form-item">
                 <label class="layui-form-label">身份</label>
                 <div class="layui-input-block">
                     <input type="radio" name="status" value="1" title="教师">
                     <input type="radio" name="status" value="2" title="学生" checked>
                 </div>
-            </div>--%>
+            </div>
             <div class="layui-form-item">
                 <label class="layui-form-label">性别</label>
                 <div class="layui-input-block">
@@ -92,13 +93,67 @@
 <script type="text/javascript" src="/framework/jquery.min.js"></script>
 <script src="/layui/layui.js"></script>
 <script>
-    //Demo
-    layui.use(['form', 'layer'], function () {
-        var $ = layui.jquery,
-            form = layui.form,
-            layer = layui.layer;
+    function upLoadImage() {
+        $("#btn_file").click();
+    }
+    function changeImage() {
+        var fileObj = document.getElementById("btn_file").files[0]; // js 获取文件对象
+        if (typeof (fileObj) == "undefined" || fileObj.size <= 0) {
+            alert("请选择图片");
+            return;
+        }
+        var formFile = new FormData();
+        //formFile.append("action", "UploadVMKImagePath");
+        formFile.append("file", fileObj); //加入文件对象
 
-        //监听提交
+        var data = formFile;
+        $.ajax({
+            url: "/upload/uploadImage",
+            data: data,
+            type: "Post",
+            dataType: "json",
+            cache: false,//上传文件无需缓存
+            processData: false,//用于对data参数进行序列化处理 这里必须false
+            contentType: false, //必须
+            success: function (res) {
+                if (res.code == 200) {
+                    layui.use(['layer'],function () {
+                        var layer = layui.layer;
+                        layer.msg("上传成功", {
+                            offset: '50%',
+                            icon: 1,
+                            time: 2000
+                        });
+                    });
+                    $("#headerImg").attr("src", res.result.imgPath);
+                    $("#headerImg").attr("style","display:block;width:50px;height:50px;padding-left: 10px");
+                    $("#head_url").val(res.result.imgPath);
+                    $("#headImgHref").attr("href",res.result.imgPath);
+                } else {
+                    layui.use(['layer'],function () {
+                        var layer = layui.layer;
+                        layer.msg(data.msg, {
+                            offset: '50%',
+                            icon: 2,
+                            time: 2000
+                        });
+                    });
+
+                }
+            },
+        })
+
+    }
+</script>
+
+
+<script>
+    layui.use(['element', 'layer','form','upload'], function () {
+        var element = layui.element,//导航的hover效果、二级菜单等功能，需要依赖element模块
+            layer = layui.layer,
+            upload = layui.upload,
+            form = layui.form;
+
         form.on('submit(registerBtn)', function (data) {
             var username = $("#username").val();
             var password = $("#password").val();
@@ -112,49 +167,53 @@
                 sex = 0;
             }
             var params = {
-                "username": username,
-                "password": password,
-                "phone": phone,
-                "headUrl": head_url,
-                "email": email,
-                "sex": sex
+                username: username,
+                password: password,
+                phone: phone,
+                headUrl: head_url,
+                email: email,
+                sex: sex
             };
-            $.ajax({
-                type: "POST",
-                data: params,
-                async: true,
-                url: "/register",
-                success: function (data) {
-                    if (data.code == 200) {
-                        layui.use(['layer'], function () {
-                            var layer = layui.layer;
-                            layer.alert("添加成功", {
-                                offset: '20%',
-                                icon: 1
-                            }, function () {
-                                window.parent.location.reload();
-                                var index = parent.layer.getFrameIndex(window.name);
-                                parent.layer.close(index);
-                            });
-                        });
-                    }
-                    else {
-                        layui.use(['layer'], function () {
-                            var layer = layui.layer;
-                            layer.msg("添加失败," + data.msg, {
-                                offset: '50%',
-                                icon: 2,
-                                time: 2000
-                            });
-                        });
-                    }
+            $.post("/register", params, function (data) {
+                if (data.code == 200) {
+                    $(location).attr('href', 'http://localhost:8081');
+                    form.render();
+                } else {
+                    layer.msg(data.msg, {
+                        offset: '50%',
+                        icon: 2,
+                        time: 2000
+                    });
+
+                    form.render();
                 }
             });
             form.render();
         });
     });
+
+        /*upload.render({
+            elem: '#uploadBtn'
+            , url: '/upload/uploadImage'
+            ,field : "file"
+            , done: function (res) {
+                if (res.code == 200) {
+                    $("#headerImg").attr("src", res.result.imgPath);
+                    $("#headerImg").attr("style","display:block;width:50px;height:50px;padding-left: 10px");
+                    $("#head_url").val(res.result.imgPath);
+                    $("#headImgHref").attr("href",res.result.imgPath);
+                } else {
+                    layer.msg(data.msg, {
+                        offset: '50%',
+                        icon: 2,
+                        time: 2000
+                    });
+                }
+            }
+        });*/
 </script>
-<script src="/js/website/user/upload.js"/>
+<%--<script src="/js/website/user/upload.js"/>--%>
+
 </body>
 
 </html>

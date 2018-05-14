@@ -42,7 +42,7 @@
         WHERE is_delete = 0 AND id = #{id}
     </select>
 
-    <select id="getUserCommentCount" parameterType="Integer">
+    <select id="getDiscussCommentCountByUserId" parameterType="Integer" resultType="Integer">
         select count(id) from discuss_comment where user_id = #{userId}
     </select>
 

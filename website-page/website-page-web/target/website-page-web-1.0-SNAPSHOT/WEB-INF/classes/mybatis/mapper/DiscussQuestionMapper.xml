@@ -3,24 +3,25 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="cn.website.mapper.discuss.DiscussQuestionMapper">
-    <sql id="selector">SELECT id,title,content,user_id,comment_count,date_format(create_time,'%Y-%m-%d %H:%i:%s') as create_time FROM discuss_question</sql>
+    <sql id="selector">id,title,content,user_id,comment_count,date_format(create_time,'%Y-%m-%d %H:%i:%s') as create_time</sql>
 
     <!-- 讨论区问题集合 -->
     <select id="getDiscussQuestionList" resultType="DiscussQuestion">
-        <include refid="selector"/>
+        SELECT <include refid="selector"/> FROM discuss_question
         WHERE is_delete = 0
+        order by id desc
     </select>
 
     <!--获取最新问题-->
     <select id="getLatestQuestions" resultType="DiscussQuestion" parameterType="Integer">
-        <include refid="selector"/>
+        select <include refid="selector"/> FROM discuss_question
         WHERE is_delete = 0
         AND user_id=#{userId} order by id desc limit #{index},#{limit}
     </select>
 
     <!--根据id查找问题-->
     <select id="getDiscussQuestionById" parameterType="Integer" resultType="DiscussQuestion">
-        <include refid="selector"/>
+        SELECT <include refid="selector"/> FROM discuss_question
             WHERE is_delete = 0
         <if test="id != null and id != ''">
             AND id = #{id}

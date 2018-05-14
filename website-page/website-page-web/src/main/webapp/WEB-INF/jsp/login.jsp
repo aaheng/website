@@ -15,14 +15,9 @@
 <div class="index-main">
     <div class="index-main-body">
         <div class="index-header">
-            <h1 class="logo hide-text"><img src="../images/res/nk.png" alt=""></h1>
+            <h1 class="logo hide-text"><img src="" alt=""></h1>
             <h2 class="subtitle">
-                <c:if test="${msg != null}">
-                    ${msg}
-                </c:if>
-                <c:if test="${msg == null}">
-                与世界分享你的知识、经验和见解
-                </c:if>
+                欢迎登录
             </h2>
         </div>
         <div class="desk-front sign-flow clearfix sign-flow-simple">
@@ -42,8 +37,8 @@
                         <button class="sign-button submit" type="reset">重置</button>
                     </div>
                     <div class="signin-misc-wrapper clearfix">
-                        <label class="remember-me">
-                            <input type="checkbox" name="rememberme" checked="" value="true"> 记住我
+                        <label class="remember-me">新用户?
+                            <a href="/toRegister" class="zg-right">前往注册</a>
                         </label>
                     </div>
                 </form>
@@ -69,7 +64,12 @@
                     $.post("/login",{"username":username,"password":password,"callback":callback},function (data) {
                         if (data.code == 200){
                             //window.location.href = "http://localhost:8081"+data.result;
-                            $(location).attr('href', 'http://localhost:8081/'+data.result);
+                            if (data.result == ''){
+                                $(location).attr('href', 'http://localhost:8081');
+                            }else{
+                                $(location).attr('href', 'http://localhost:8081/'+data.result);
+                            }
+
                         }else {
                             layer.msg(data.msg, {
                                 offset: '50%',

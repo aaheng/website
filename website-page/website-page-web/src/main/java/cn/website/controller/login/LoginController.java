@@ -4,6 +4,7 @@ import cn.website.common.plugins.PageData;
 import cn.website.common.pojo.Code;
 import cn.website.common.pojo.SResponse;
 import cn.website.controller.BaseController;
+import cn.website.page.pojo.HostHolder;
 import cn.website.page.pojo.LoginToken;
 import cn.website.page.pojo.User;
 import cn.website.service.login.ILoginService;
@@ -32,6 +33,8 @@ public class LoginController extends BaseController{
     private LoginService loginService;
     @Autowired
     private LoginTokenService loginTokenService;
+    @Autowired
+    private HostHolder hostHolder;
 
     /*@RequestMapping(value = "/register",method = RequestMethod.POST, produces = "application/json; charset=utf-8")
     @ResponseBody
@@ -168,6 +171,8 @@ public class LoginController extends BaseController{
             if (StringUtils.isNotBlank(callback)) {
                resp.setResult(callback);
               // model.addAttribute("callback",callback);
+            }else{
+                resp.setResult("");
             }
             resp.setCode(Code.SUCCESS_CODE);
             resp.setMsg(Code.SUCCESS_MSG);
@@ -192,6 +197,7 @@ public class LoginController extends BaseController{
     @RequestMapping("/logout/{userId}")
     public String logout(@PathVariable("userId") Integer userId) {
         loginService.updateUserStatus(userId);
+        hostHolder.clear();
         return "redirect:/";
     }
 }

@@ -30,6 +30,9 @@ public class Code implements Serializable {
     public static final int USER_UN_LOGIN_CODE = 999;
     public static final String USER_UN_LOGIN_MSG = "用户未登录";
 
+	public static final int USER_LOGIN_CODE = 888;
+	public static final String USER_LOGIN_MSG = "用户已登录";
+
     public static final int MESSAGE_RECEIVER_NONE_CODE = 4008;
     public static final String MESSAGE_RECEIVER_NONE_MSG = "接收消息的用户不能为空";
 

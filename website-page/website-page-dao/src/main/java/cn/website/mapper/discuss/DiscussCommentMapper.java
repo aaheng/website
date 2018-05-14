@@ -18,5 +18,5 @@ public interface DiscussCommentMapper {
 
     public DiscussComment getDiscussCommentById(@Param("id") Integer id);
 
-    public Integer getUserCommentCount(@Param("userId") Integer userId);
+    public Integer getDiscussCommentCountByUserId(@Param("userId") Integer userId);
 }

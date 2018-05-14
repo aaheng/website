@@ -9,5 +9,12 @@ public interface MessageMapper {
 
     public Integer insertMessage(Message message);
 
-    public List<Message> getConversationList(@Param("id") Integer userId);
+    public List<Message> getConversationList(@Param("userId") Integer userId);
+
+    int getConversationUnreadCount(@Param("userId") int userId,
+                                   @Param("conversationId") String conversationId);
+
+    List<Message> getConversationDetail(@Param("conversationId") String conversationId,
+                                        @Param("offset") int offset,
+                                        @Param("limit") int limit);
 }

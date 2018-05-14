@@ -41,4 +41,12 @@ public class MessageService {
 
         return messageMapper.getConversationList(currentUserId);
     }
+
+    public int getConversationUnreadCount(int userId, String conversationId) {
+        return messageMapper.getConversationUnreadCount(userId, conversationId);
+    }
+
+    public List<Message> getConversationDetail(String conversationId,int offset, int limit){
+        return messageMapper.getConversationDetail(conversationId, offset, limit);
+    }
 }

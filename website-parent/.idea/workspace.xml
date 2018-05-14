@@ -2,43 +2,178 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9cdda57-d0c7-42d6-a7e2-7915960f16d0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../website-common/src/main/java/cn/website/common/pojo/Constants.java" afterPath="$PROJECT_DIR$/../website-common/src/main/java/cn/website/common/pojo/Constants.java" />
-      <change beforePath="$PROJECT_DIR$/../website-common/target/classes/cn/website/common/pojo/Constants.class" afterPath="$PROJECT_DIR$/../website-common/target/classes/cn/website/common/pojo/Constants.class" />
+      <change beforePath="$PROJECT_DIR$/../website-common/src/main/java/cn/website/common/pojo/Code.java" afterPath="$PROJECT_DIR$/../website-common/src/main/java/cn/website/common/pojo/Code.java" />
+      <change beforePath="$PROJECT_DIR$/../website-common/target/classes/cn/website/common/pojo/Code.class" afterPath="$PROJECT_DIR$/../website-common/target/classes/cn/website/common/pojo/Code.class" />
       <change beforePath="$PROJECT_DIR$/../website-common/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/../website-common/target/maven-archiver/pom.properties" />
-      <change beforePath="$PROJECT_DIR$/../website-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/../website-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change beforePath="$PROJECT_DIR$/../website-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/../website-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
       <change beforePath="$PROJECT_DIR$/../website-common/target/website-common-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/../website-common/target/website-common-1.0-SNAPSHOT.jar" />
-      <change beforePath="$PROJECT_DIR$/../website-page/pom.xml" afterPath="$PROJECT_DIR$/../website-page/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-dao/src/main/java/cn/website/mapper/discuss/DiscussCommentMapper.java" afterPath="$PROJECT_DIR$/../website-page/website-page-dao/src/main/java/cn/website/mapper/discuss/DiscussCommentMapper.java" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-dao/src/main/java/cn/website/mapper/user/MessageMapper.java" afterPath="$PROJECT_DIR$/../website-page/website-page-dao/src/main/java/cn/website/mapper/user/MessageMapper.java" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-dao/src/main/java/cn/website/mapper/user/UserMapper.java" afterPath="$PROJECT_DIR$/../website-page/website-page-dao/src/main/java/cn/website/mapper/user/UserMapper.java" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-dao/target/classes/cn/website/mapper/discuss/DiscussCommentMapper.class" afterPath="$PROJECT_DIR$/../website-page/website-page-dao/target/classes/cn/website/mapper/discuss/DiscussCommentMapper.class" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-dao/target/classes/cn/website/mapper/user/MessageMapper.class" afterPath="$PROJECT_DIR$/../website-page/website-page-dao/target/classes/cn/website/mapper/user/MessageMapper.class" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-dao/target/classes/cn/website/mapper/user/UserMapper.class" afterPath="$PROJECT_DIR$/../website-page/website-page-dao/target/classes/cn/website/mapper/user/UserMapper.class" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-dao/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/../website-page/website-page-dao/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-dao/target/website-page-dao-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/../website-page/website-page-dao/target/website-page-dao-1.0-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/SensitiveService.java" afterPath="$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/SensitiveService.java" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/async/handler/FeedHandler.java" afterPath="" />
       <change beforePath="$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/async/handler/FollowHandler.java" afterPath="$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/async/handler/FollowHandler.java" />
       <change beforePath="$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/async/handler/LikeHandler.java" afterPath="$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/async/handler/LikeHandler.java" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/login/LoginService.java" afterPath="$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/login/LoginService.java" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/discuss/DiscussCommentService.java" afterPath="$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/discuss/DiscussCommentService.java" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/user/MessageService.java" afterPath="$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/user/MessageService.java" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/user/UserService.java" afterPath="$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/user/UserService.java" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-service/target/classes/cn/website/service/SensitiveService.class" afterPath="$PROJECT_DIR$/../website-page/website-page-service/target/classes/cn/website/service/SensitiveService.class" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-service/target/classes/cn/website/service/async/handler/FeedHandler.class" afterPath="$PROJECT_DIR$/../website-page/website-page-service/target/classes/cn/website/service/async/handler/FeedHandler.class" />
       <change beforePath="$PROJECT_DIR$/../website-page/website-page-service/target/classes/cn/website/service/async/handler/FollowHandler.class" afterPath="$PROJECT_DIR$/../website-page/website-page-service/target/classes/cn/website/service/async/handler/FollowHandler.class" />
       <change beforePath="$PROJECT_DIR$/../website-page/website-page-service/target/classes/cn/website/service/async/handler/LikeHandler.class" afterPath="$PROJECT_DIR$/../website-page/website-page-service/target/classes/cn/website/service/async/handler/LikeHandler.class" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-service/target/classes/cn/website/service/login/LoginService.class" afterPath="$PROJECT_DIR$/../website-page/website-page-service/target/classes/cn/website/service/login/LoginService.class" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-service/target/classes/cn/website/service/discuss/DiscussCommentService.class" afterPath="$PROJECT_DIR$/../website-page/website-page-service/target/classes/cn/website/service/discuss/DiscussCommentService.class" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-service/target/classes/cn/website/service/user/MessageService.class" afterPath="$PROJECT_DIR$/../website-page/website-page-service/target/classes/cn/website/service/user/MessageService.class" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-service/target/classes/cn/website/service/user/UserService.class" afterPath="$PROJECT_DIR$/../website-page/website-page-service/target/classes/cn/website/service/user/UserService.class" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-service/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/../website-page/website-page-service/target/maven-archiver/pom.properties" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-service/target/website-page-service-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/../website-page/website-page-service/target/website-page-service-1.0-SNAPSHOT.jar" />
       <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/discuss/DiscussCommentController.java" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/discuss/DiscussCommentController.java" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/discuss/DiscussQuestionController.java" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/discuss/DiscussQuestionController.java" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/follow/FollowController.java" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/follow/FollowController.java" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/index/IndexController.java" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/index/IndexController.java" />
       <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/login/LoginController.java" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/login/LoginController.java" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/user/MessageController.java" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/user/MessageController.java" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/user/UserController.java" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/user/UserController.java" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/video/VideoController.java" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/video/VideoController.java" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/interceptor/LoginRequiredInterceptor.java" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/interceptor/LoginRequiredInterceptor.java" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/interceptor/PassportInterceptor.java" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/interceptor/PassportInterceptor.java" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/resources/SensitiveWords.txt" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/resources/SensitiveWords.txt" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/resources/mybatis/mapper/DiscussCommentMapper.xml" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/resources/mybatis/mapper/DiscussCommentMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/resources/mybatis/mapper/DiscussQuestionMapper.xml" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/resources/mybatis/mapper/DiscussQuestionMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/resources/mybatis/mapper/FeedMapper.xml" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/resources/mybatis/mapper/FeedMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/resources/mybatis/mapper/MessageMapper.xml" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/resources/mybatis/mapper/MessageMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/resources/mybatis/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/resources/mybatis/mapper/UserMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/resources/mybatis/mapper/VideoMapper.xml" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/resources/mybatis/mapper/VideoMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/discuss.jsp" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/discuss.jsp" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/discuss/addQuestion.jsp" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/discuss/addQuestion.jsp" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/follow/followees.jsp" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/follow/followees.jsp" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/follow/followers.jsp" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/follow/followers.jsp" />
       <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/header.jsp" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/header.jsp" />
       <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/index.jsp" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/index.jsp" />
       <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/login.jsp" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/login.jsp" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/message.jsp" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/message.jsp" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/profile.jsp" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/profile.jsp" />
       <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/question.jsp" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/question.jsp" />
       <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/register.jsp" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/register.jsp" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/website/discuss.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/website/discuss.js" />
-      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/website/user/upload.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/website/user/upload.js" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/video.jsp" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/video.jsp" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/videodetail.jsp" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/videodetail.jsp" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/css/letter.css" afterPath="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/css/letter.css" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/SensitiveWords.txt" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/SensitiveWords.txt" />
       <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/cn/website/controller/discuss/DiscussCommentController.class" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/cn/website/controller/discuss/DiscussCommentController.class" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/cn/website/controller/discuss/DiscussQuestionController.class" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/cn/website/controller/discuss/DiscussQuestionController.class" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/cn/website/controller/follow/FollowController.class" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/cn/website/controller/follow/FollowController.class" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/cn/website/controller/index/IndexController.class" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/cn/website/controller/index/IndexController.class" />
       <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/cn/website/controller/login/LoginController.class" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/cn/website/controller/login/LoginController.class" />
       <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/cn/website/controller/upload/UploadController.class" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/cn/website/controller/upload/UploadController.class" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/cn/website/controller/user/MessageController.class" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/cn/website/controller/user/MessageController.class" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/cn/website/controller/user/UserController.class" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/cn/website/controller/user/UserController.class" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/cn/website/controller/video/VideoController.class" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/cn/website/controller/video/VideoController.class" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/cn/website/interceptor/LoginRequiredInterceptor.class" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/cn/website/interceptor/LoginRequiredInterceptor.class" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/cn/website/interceptor/PassportInterceptor.class" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/cn/website/interceptor/PassportInterceptor.class" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/mybatis/mapper/DiscussCommentMapper.xml" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/mybatis/mapper/DiscussCommentMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/mybatis/mapper/DiscussQuestionMapper.xml" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/mybatis/mapper/DiscussQuestionMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/mybatis/mapper/FeedMapper.xml" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/mybatis/mapper/FeedMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/mybatis/mapper/MessageMapper.xml" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/mybatis/mapper/MessageMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/mybatis/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/mybatis/mapper/UserMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/mybatis/mapper/VideoMapper.xml" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/classes/mybatis/mapper/VideoMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/maven-archiver/pom.properties" />
       <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
       <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/logs/access_log.2018-05-08" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/logs/access_log.2018-05-10" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/logs/access_log.2018-05-11" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/addMessage_jsp.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/discuss/addQuestion_jsp.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/discuss_jsp.java" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/discuss_jsp.java" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/follow/followees_jsp.java" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/follow/followees_jsp.java" />
       <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/header_jsp.class" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/header_jsp.class" />
       <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/header_jsp.java" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/header_jsp.java" />
       <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/index_jsp.class" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/index_jsp.class" />
       <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/index_jsp.java" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/index_jsp.java" />
       <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/login_jsp.class" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/login_jsp.class" />
       <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/login_jsp.java" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/login_jsp.java" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/message_jsp.java" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/message_jsp.java" />
       <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/question_jsp.class" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/question_jsp.class" />
       <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/question_jsp.java" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/question_jsp.java" />
       <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/register_jsp.class" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/register_jsp.class" />
       <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/register_jsp.java" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/register_jsp.java" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/video_jsp.java" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/tomcat/work/Tomcat/localhost/_/org/apache/jsp/WEB_002dINF/jsp/video_jsp.java" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT.war" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT.war" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/UploadPic/1be5df1fa9414170b87a26e3c19abd3e.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/UploadPic/21b23fbedaa6401081d18db40e600051.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/UploadPic/26794e369eae481f9e48f64b2262fe57.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/UploadPic/35264bf7fc59446d97b729824a55e6cb.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/UploadPic/36da173267b24f628d0890acf6fe97ec.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/UploadPic/379bb9fabe6e4ab193c4f3fde4532b22.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/UploadPic/4cc2e58d306b4de0becf90aecc6764c7.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/UploadPic/531797ea18274d938ae4972af46a2f80.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/UploadPic/5609e1b5165541af941c0736f3fdda82.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/UploadPic/583f367fca30498d9b5701100a462d6b.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/UploadPic/61859a95a88b4875896b41a89aa39da2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/UploadPic/68acd6c5c6d94876af5125a32bda0085.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/UploadPic/7b4672bcd0674102b84ec4b84ef517ce.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/UploadPic/8724b908e4be43c89a8d7c7700c6042d.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/UploadPic/98ab53ed14c04d5cba3774fdadd9797e.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/UploadPic/a7d90bf5efb34c7fadd0b5a3b6cc5c50.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/UploadPic/c2ad7a4214b24d0395bae1f1b2b5b7ea.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/UploadPic/fd8aa58bd4a542daa8d63f2cb9de00fb.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/UploadPic/thumbnail/1be5df1fa9414170b87a26e3c19abd3e_thumbnail.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/UploadPic/thumbnail/21b23fbedaa6401081d18db40e600051_thumbnail.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/UploadPic/thumbnail/26794e369eae481f9e48f64b2262fe57_thumbnail.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/UploadPic/thumbnail/35264bf7fc59446d97b729824a55e6cb_thumbnail.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/UploadPic/thumbnail/379bb9fabe6e4ab193c4f3fde4532b22_thumbnail.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/UploadPic/thumbnail/4cc2e58d306b4de0becf90aecc6764c7_thumbnail.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/UploadPic/thumbnail/531797ea18274d938ae4972af46a2f80_thumbnail.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/UploadPic/thumbnail/5609e1b5165541af941c0736f3fdda82_thumbnail.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/UploadPic/thumbnail/583f367fca30498d9b5701100a462d6b_thumbnail.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/UploadPic/thumbnail/61859a95a88b4875896b41a89aa39da2_thumbnail.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/UploadPic/thumbnail/68acd6c5c6d94876af5125a32bda0085_thumbnail.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/UploadPic/thumbnail/7b4672bcd0674102b84ec4b84ef517ce_thumbnail.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/UploadPic/thumbnail/8724b908e4be43c89a8d7c7700c6042d_thumbnail.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/UploadPic/thumbnail/98ab53ed14c04d5cba3774fdadd9797e_thumbnail.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/UploadPic/thumbnail/a7d90bf5efb34c7fadd0b5a3b6cc5c50_thumbnail.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/UploadPic/thumbnail/c2ad7a4214b24d0395bae1f1b2b5b7ea_thumbnail.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/UploadPic/thumbnail/fd8aa58bd4a542daa8d63f2cb9de00fb_thumbnail.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/classes/SensitiveWords.txt" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/classes/SensitiveWords.txt" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/classes/cn/website/controller/discuss/DiscussCommentController.class" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/classes/cn/website/controller/discuss/DiscussCommentController.class" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/classes/cn/website/controller/discuss/DiscussQuestionController.class" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/classes/cn/website/controller/discuss/DiscussQuestionController.class" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/classes/cn/website/controller/follow/FollowController.class" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/classes/cn/website/controller/follow/FollowController.class" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/classes/cn/website/controller/index/IndexController.class" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/classes/cn/website/controller/index/IndexController.class" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/classes/cn/website/controller/login/LoginController.class" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/classes/cn/website/controller/login/LoginController.class" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/classes/cn/website/controller/user/MessageController.class" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/classes/cn/website/controller/user/MessageController.class" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/classes/cn/website/controller/user/UserController.class" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/classes/cn/website/controller/user/UserController.class" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/classes/cn/website/controller/video/VideoController.class" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/classes/cn/website/controller/video/VideoController.class" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/classes/cn/website/interceptor/LoginRequiredInterceptor.class" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/classes/cn/website/interceptor/LoginRequiredInterceptor.class" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/classes/cn/website/interceptor/PassportInterceptor.class" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/classes/cn/website/interceptor/PassportInterceptor.class" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/classes/mybatis/mapper/DiscussCommentMapper.xml" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/classes/mybatis/mapper/DiscussCommentMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/classes/mybatis/mapper/DiscussQuestionMapper.xml" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/classes/mybatis/mapper/DiscussQuestionMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/classes/mybatis/mapper/LoginTokenMapper.xml" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/classes/mybatis/mapper/LoginTokenMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/classes/mybatis/mapper/MessageMapper.xml" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/classes/mybatis/mapper/MessageMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/classes/mybatis/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/classes/mybatis/mapper/UserMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/classes/mybatis/mapper/VideoMapper.xml" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/classes/mybatis/mapper/VideoMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/jsp/discuss.jsp" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/jsp/discuss.jsp" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/jsp/discuss/addQuestion.jsp" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/jsp/discuss/addQuestion.jsp" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/jsp/follow/followees.jsp" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/jsp/follow/followees.jsp" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/jsp/follow/followers.jsp" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/jsp/follow/followers.jsp" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/jsp/header.jsp" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/jsp/header.jsp" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/jsp/index.jsp" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/jsp/index.jsp" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/jsp/login.jsp" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/jsp/login.jsp" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/jsp/message.jsp" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/jsp/message.jsp" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/jsp/question.jsp" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/jsp/question.jsp" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/jsp/register.jsp" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/jsp/register.jsp" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/jsp/video.jsp" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/jsp/video.jsp" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/jsp/videodetail.jsp" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/jsp/videodetail.jsp" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/lib/website-common-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/lib/website-common-1.0-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/lib/website-page-dao-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/lib/website-page-dao-1.0-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/lib/website-page-pojo-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/lib/website-page-pojo-1.0-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/lib/website-page-service-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/WEB-INF/lib/website-page-service-1.0-SNAPSHOT.jar" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/css/letter.css" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/css/letter.css" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/css/result.css" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/css/result.css" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/website/discuss.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/website/discuss.js" />
+      <change beforePath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/website/user/upload.js" afterPath="$PROJECT_DIR$/../website-page/website-page-web/target/website-page-web-1.0-SNAPSHOT/js/website/user/upload.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -55,26 +190,35 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="register.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/register.jsp">
+      <file leaf-file-name="MessageController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/user/MessageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="116" column="14" lean-forward="false" selection-start-line="116" selection-start-column="14" selection-end-line="116" selection-end-column="14" />
-              <folding>
-                <element signature="n#style#0;n#button#0;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#a#0;n#span#0;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="1771">
+              <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/header.jsp">
+      <file leaf-file-name="register.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/register.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="50" column="48" lean-forward="false" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="48" />
+            <state relative-caret-position="2001">
+              <caret line="87" column="33" lean-forward="false" selection-start-line="87" selection-start-column="33" selection-end-line="87" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -83,74 +227,80 @@
       <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/login/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2023">
-              <caret line="108" column="50" lean-forward="false" selection-start-line="108" selection-start-column="50" selection-end-line="108" selection-end-column="50" />
+            <state relative-caret-position="2323">
+              <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/header.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="874">
+              <caret line="38" column="25" lean-forward="false" selection-start-line="36" selection-start-column="16" selection-end-line="38" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="messageDetail.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/messageDetail.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2967">
+              <caret line="129" column="77" lean-forward="false" selection-start-line="129" selection-start-column="77" selection-end-line="129" selection-end-column="77" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/profile.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1541">
+              <caret line="67" column="102" lean-forward="false" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="106" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="followees.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/follow/followees.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="36" column="63" lean-forward="false" selection-start-line="36" selection-start-column="63" selection-end-line="36" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="followers.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/follow/followers.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1955">
+              <caret line="796" column="114" lean-forward="false" selection-start-line="795" selection-start-column="44" selection-end-line="796" selection-end-column="114" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#7422#7423#0" expanded="true" />
-                <element signature="e#7455#7456#0" expanded="true" />
+                <marker date="1526206046138" expanded="false" signature="1444:49714" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UploadController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/upload/UploadController.java">
+      <file leaf-file-name="FeedHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/async/handler/FeedHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+            <state relative-caret-position="1886">
+              <caret line="100" column="62" lean-forward="false" selection-start-line="100" selection-start-column="55" selection-end-line="100" selection-end-column="62" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="upload.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/website/upload.js">
+      <file leaf-file-name="EventHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../website-common/src/main/java/cn/website/common/async/EventHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="question.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/question.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1626">
-              <caret line="128" column="110" lean-forward="false" selection-start-line="128" selection-start-column="110" selection-end-line="128" selection-end-column="110" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="62" column="58" lean-forward="false" selection-start-line="62" selection-start-column="58" selection-end-line="62" selection-end-column="58" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/login/LoginService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="30" column="19" lean-forward="false" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Code.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../website-common/src/main/java/cn/website/common/pojo/Code.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="52" />
+            <state relative-caret-position="138">
+              <caret line="6" column="9" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -175,6 +325,8 @@
       <find>/images/im</find>
       <find>8080</find>
       <find>file</find>
+      <find>粉丝</find>
+      <find>548</find>
     </findStrings>
     <replaceStrings>
       <replace>/images</replace>
@@ -192,36 +344,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/website/test.js" />
-        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/resources/mybatis/mapper/FeedMapper.xml" />
-        <option value="$PROJECT_DIR$/../website-page/website-page-dao/src/main/java/cn/website/mapper/feed/FeedMapper.java" />
-        <option value="$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/feed/FeedService.java" />
-        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/feed/FeedController.java" />
-        <option value="$PROJECT_DIR$/../website-page-pojo/src/main/java/cn/website/page/pojo/Feed.java" />
-        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/follow/FollowController.java" />
-        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/follow/followees.jsp" />
-        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/index/IndexController.java" />
-        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/profile.jsp" />
-        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/resources/mybatis/mapper/DiscussCommentMapper.xml" />
-        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/css/result.css" />
-        <option value="$PROJECT_DIR$/../website-page/pom.xml" />
-        <option value="$PROJECT_DIR$/../website-common/src/main/java/cn/website/common/pojo/Constants.java" />
-        <option value="$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/async/handler/FollowHandler.java" />
-        <option value="$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/async/handler/LikeHandler.java" />
-        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/website/discuss.js" />
-        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/discuss/DiscussCommentController.java" />
-        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/login.jsp" />
-        <option value="$PROJECT_DIR$/../website-common/src/main/java/cn/website/common/plugins/PageData.java" />
-        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/BaseController.java" />
         <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/website/user/upload.js" />
         <option value="$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/login/LoginService.java" />
-        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/question.jsp" />
-        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/index.jsp" />
-        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/header.jsp" />
-        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/login/LoginController.java" />
         <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/video/UploadController.java" />
         <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/upload/UploadController.java" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/resources/mybatis/mapper/DiscussCommentMapper.xml" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-dao/src/main/java/cn/website/mapper/discuss/DiscussCommentMapper.java" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/discuss/DiscussCommentService.java" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-dao/src/main/java/cn/website/mapper/user/UserMapper.java" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/user/UserService.java" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/user/UserController.java" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/resources/mybatis/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/SensitiveService.java" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/login/LoginController.java" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/user/editUser.jsp" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/login.jsp" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-dao/src/main/java/cn/website/mapper/user/MessageMapper.java" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/user/MessageService.java" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/message.jsp" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/resources/mybatis/mapper/MessageMapper.xml" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/user/MessageController.java" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/css/letter.css" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/interceptor/LoginRequiredInterceptor.java" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/resources/mybatis/mapper/DiscussQuestionMapper.xml" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/interceptor/PassportInterceptor.java" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/feed/FeedController.java" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/discuss/DiscussCommentController.java" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/async/handler/FeedHandler.java" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/resources/mybatis/mapper/FeedMapper.xml" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/follow/FollowController.java" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/feeds.jsp" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/discuss/DiscussQuestionController.java" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/discuss/addQuestion.jsp" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/resources/SensitiveWords.txt" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/video/VideoController.java" />
+        <option value="$PROJECT_DIR$/../website-common/src/main/java/cn/website/common/pojo/Code.java" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/common/CommonController.java" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/videodetail.jsp" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/index/IndexController.java" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/resources/mybatis/mapper/VideoMapper.xml" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/index.jsp" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/video.jsp" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/discuss.jsp" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/question.jsp" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/async/handler/FollowHandler.java" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/async/handler/LikeHandler.java" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/header.jsp" />
         <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/register.jsp" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/messageDetail.jsp" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/profile.jsp" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/follow/followers.jsp" />
+        <option value="$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/follow/followees.jsp" />
       </list>
     </option>
   </component>
@@ -256,13 +429,18 @@
       <expand>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="website-page-web" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="website-page-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="website-page-service" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
         </path>
       </expand>
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="24" />
     <option name="y" value="20" />
     <option name="width" value="1346" />
@@ -312,6 +490,7 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -352,6 +531,71 @@
             <path>
               <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="website-page" type="462c0819:PsiDirectoryNode" />
+              <item name="website-page-dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website-page" type="462c0819:PsiDirectoryNode" />
+              <item name="website-page-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website-page" type="462c0819:PsiDirectoryNode" />
+              <item name="website-page-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website-page" type="462c0819:PsiDirectoryNode" />
+              <item name="website-page-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website-page" type="462c0819:PsiDirectoryNode" />
+              <item name="website-page-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website-page" type="462c0819:PsiDirectoryNode" />
+              <item name="website-page-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="discuss" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website-page" type="462c0819:PsiDirectoryNode" />
+              <item name="website-page-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="follow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website-page" type="462c0819:PsiDirectoryNode" />
+              <item name="website-page-dao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website-page" type="462c0819:PsiDirectoryNode" />
               <item name="website-page-service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -392,42 +636,84 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="handler" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website-page" type="462c0819:PsiDirectoryNode" />
+              <item name="website-page-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="feed" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website-page" type="462c0819:PsiDirectoryNode" />
+              <item name="website-page-web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website-page" type="462c0819:PsiDirectoryNode" />
+              <item name="website-page-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website-page" type="462c0819:PsiDirectoryNode" />
+              <item name="website-page-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website-page" type="462c0819:PsiDirectoryNode" />
+              <item name="website-page-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website-page" type="462c0819:PsiDirectoryNode" />
+              <item name="website-page-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website-page" type="462c0819:PsiDirectoryNode" />
+              <item name="website-page-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website-page" type="462c0819:PsiDirectoryNode" />
+              <item name="website-page-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
               <item name="discuss" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="website-page" type="462c0819:PsiDirectoryNode" />
               <item name="website-page-web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="website-page" type="462c0819:PsiDirectoryNode" />
-              <item name="website-page-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="website-page" type="462c0819:PsiDirectoryNode" />
-              <item name="website-page-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="website-page" type="462c0819:PsiDirectoryNode" />
-              <item name="website-page-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="website-page" type="462c0819:PsiDirectoryNode" />
-              <item name="website-page-web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="index" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
@@ -438,6 +724,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="website" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
@@ -448,7 +735,28 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="website" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="upload" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website-page" type="462c0819:PsiDirectoryNode" />
+              <item name="website-page-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="video" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website-page" type="462c0819:PsiDirectoryNode" />
+              <item name="website-page-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="website" type="462c0819:PsiDirectoryNode" />
+              <item name="interceptor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
@@ -510,37 +818,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="website-page" type="462c0819:PsiDirectoryNode" />
-              <item name="website-page-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="website" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="website-page" type="462c0819:PsiDirectoryNode" />
-              <item name="website-page-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="website" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="website-page" type="462c0819:PsiDirectoryNode" />
-              <item name="website-page-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="layui" type="462c0819:PsiDirectoryNode" />
+              <item name="video" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
@@ -560,17 +838,6 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="jsp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="website-page" type="462c0819:PsiDirectoryNode" />
-              <item name="website-page-web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-              <item name="discuss" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
@@ -582,6 +849,17 @@
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
               <item name="jsp" type="462c0819:PsiDirectoryNode" />
               <item name="follow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website-page" type="462c0819:PsiDirectoryNode" />
+              <item name="website-page-web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="video" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="website-parent" type="b2602c69:ProjectViewProjectNode" />
@@ -617,9 +895,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -634,11 +911,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\code\my\website\website-common\src\main\java\cn\website\common\plugins" />
-      <recent name="E:\code\my\website\website-page\website-page-web\src\main\java\cn\website\controller" />
-      <recent name="E:\code\my\website\website-page\website-page-web\src\main\webapp\images" />
+      <recent name="E:\code\my\website\website-page\website-page-web\src\main\webapp\video" />
+      <recent name="E:\code\my\website\website-page\website-page-service\src\main\java\cn\website\service\async\handler" />
       <recent name="E:\code\my\website\website-page\website-page-web\src\main\webapp\WEB-INF\jsp" />
-      <recent name="E:\code\my\website\website-page\website-page-web\src\main\resources\mybatis\mapper" />
+      <recent name="E:\code\my\website\website-page\website-page-web\src\main\webapp\WEB-INF\jsp\user" />
+      <recent name="E:\code\my\website\website-common\src\main\java\cn\website\common\plugins" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -775,77 +1052,80 @@
       <workItem from="1525773663703" duration="1499000" />
       <workItem from="1525846361329" duration="2048000" />
       <workItem from="1525941735646" duration="6557000" />
-      <workItem from="1526024607477" duration="10328000" />
+      <workItem from="1526024607477" duration="10433000" />
+      <workItem from="1526053327374" duration="7649000" />
+      <workItem from="1526112599619" duration="11319000" />
+      <workItem from="1526175224649" duration="25584000" />
+      <workItem from="1526209411194" duration="592000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20432000" />
+    <option name="totallyTimeSpent" value="65681000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47790506" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47790506" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26096824" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19515885" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.57937807" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.58428806" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.57937807" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.58428806" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47790506" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47790506" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26096824" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19515885" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -859,480 +1139,408 @@
       <breakpoints>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/login/LoginController.java</url>
-          <line>159</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/login/LoginController.java</url>
-          <line>44</line>
+          <line>47</line>
           <properties />
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/login/LoginController.java</url>
+          <line>109</line>
+          <properties />
+          <option name="timeStamp" value="42" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="11" />
+      <option name="time" value="43" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="MavenRunConfiguration">
+        <watch expression="messageList" />
+        <watch expression="messageList.get(0)" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/addMessage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1311">
-          <caret line="57" column="35" lean-forward="false" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/video.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../website-common/src/main/java/cn/website/common/pojo/FileEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="34" column="8" lean-forward="true" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page-pojo/src/main/java/cn/website/page/pojo/DiscussComment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/resources/mybatis/mapper/FileMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="50" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="50" />
-          <folding>
-            <marker date="1525108693343" expanded="true" signature="476:650" ph="insert into file... " />
-            <marker date="1525108693343" expanded="true" signature="734:796" ph="UPDATE file... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/feed/FeedService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/feed/FeedController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1196">
-          <caret line="52" column="57" lean-forward="false" selection-start-line="52" selection-start-column="57" selection-end-line="52" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page-pojo/src/main/java/cn/website/page/pojo/Feed.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="52" column="33" lean-forward="true" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
-          <folding>
-            <element signature="e#278#279#0" expanded="false" />
-            <element signature="e#303#304#0" expanded="false" />
-            <element signature="e#336#337#0" expanded="false" />
-            <element signature="e#364#365#0" expanded="false" />
-            <element signature="e#392#393#0" expanded="false" />
-            <element signature="e#419#420#0" expanded="false" />
-            <element signature="e#720#721#0" expanded="false" />
-            <element signature="e#754#755#0" expanded="false" />
-            <element signature="e#808#809#0" expanded="false" />
-            <element signature="e#854#855#0" expanded="false" />
-            <element signature="e#893#894#0" expanded="false" />
-            <element signature="e#924#925#0" expanded="false" />
-            <element signature="e#976#977#0" expanded="false" />
-            <element signature="e#1016#1017#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/resources/mybatis/mapper/FeedMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-          <folding>
-            <marker date="1525942727115" expanded="true" signature="404:510" ph="insert into feed... " />
-            <marker date="1525942727115" expanded="true" signature="594:681" ph="SELECT FROM feed" />
-            <marker date="1525942727115" expanded="true" signature="745:1037" ph="SELECT FROM WHERE" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page-pojo/src/main/java/cn/website/page/pojo/EntityType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/videodetail.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-483">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/follow/followees.jsp">
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-dao/src/main/java/cn/website/mapper/user/MessageMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="25" column="45" lean-forward="false" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="45" />
-          <folding />
+          <caret line="18" column="66" lean-forward="false" selection-start-line="16" selection-start-column="65" selection-end-line="18" selection-end-column="66" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/follow/FollowController.java">
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/resources/mybatis/mapper/MessageMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1970">
-          <caret line="131" column="17" lean-forward="false" selection-start-line="131" selection-start-column="5" selection-end-line="131" selection-end-column="17" />
-          <folding>
-            <element signature="e#8894#8895#0" expanded="false" />
-            <element signature="e#8935#8936#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="351">
+          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/index/IndexController.java">
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/user/MessageService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="69" column="42" lean-forward="false" selection-start-line="69" selection-start-column="36" selection-end-line="69" selection-end-column="42" />
-          <folding />
+        <state relative-caret-position="393">
+          <caret line="31" column="12" lean-forward="false" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/profile.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="157" column="36" lean-forward="false" selection-start-line="157" selection-start-column="36" selection-end-line="157" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/discuss/addQuestion.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/framework/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/images/img/sprites-1.9.2.4c54885a.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/css/result.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-550">
-          <caret line="13466" column="66" lean-forward="false" selection-start-line="13466" selection-start-column="37" selection-end-line="13466" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/css/detail.css">
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
-          <caret line="498" column="1" lean-forward="false" selection-start-line="498" selection-start-column="1" selection-end-line="498" selection-end-column="1" />
+          <caret line="4" column="101755" lean-forward="false" selection-start-line="4" selection-start-column="101755" selection-end-line="4" selection-end-column="101755" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/css/letter.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="6789" column="14" lean-forward="false" selection-start-line="6789" selection-start-column="14" selection-end-line="6789" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/interceptor/LoginRequiredInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="19" column="55" lean-forward="false" selection-start-line="19" selection-start-column="55" selection-end-line="19" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-dao/src/main/java/cn/website/mapper/discuss/DiscussQuestionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/resources/mybatis/mapper/DiscussQuestionMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1110">
+          <caret line="51" column="9" lean-forward="false" selection-start-line="51" selection-start-column="9" selection-end-line="51" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/interceptor/PassportInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="613">
+          <caret line="53" column="31" lean-forward="false" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/discuss/DiscussCommentService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="93" column="62" lean-forward="false" selection-start-line="93" selection-start-column="56" selection-end-line="93" selection-end-column="62" />
-          <folding>
-            <element signature="e#3392#3393#0" expanded="false" />
-            <element signature="e#3463#3464#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="324">
+          <caret line="55" column="45" lean-forward="false" selection-start-line="55" selection-start-column="40" selection-end-line="55" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/feed/FeedService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../website-page/website-page-dao/src/main/java/cn/website/mapper/feed/FeedMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="27" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        <state relative-caret-position="69">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/video/VideoController.java">
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/resources/mybatis/mapper/FeedMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="36" lean-forward="true" selection-start-line="0" selection-start-column="36" selection-end-line="0" selection-end-column="36" />
-          <folding />
+        <state relative-caret-position="130">
+          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page/website-page-dao/src/main/java/cn/website/mapper/discuss/DiscussCommentMapper.java">
+    <entry file="file://$PROJECT_DIR$/../website-common/src/main/java/cn/website/common/async/EventConsumer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="20" column="38" lean-forward="false" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="38" />
-          <folding />
+        <state relative-caret-position="90">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page/pom.xml">
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/discuss/DiscussQuestionService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="40" column="26" lean-forward="false" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
-          <folding />
+        <state relative-caret-position="278">
+          <caret line="74" column="41" lean-forward="false" selection-start-line="74" selection-start-column="41" selection-end-line="74" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/website/discuss.js">
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/idea.jar!/resources/html5-schema/html5/web-forms.rnc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="23" column="61" lean-forward="false" selection-start-line="23" selection-start-column="61" selection-end-line="23" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/async/handler/LikeHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="27" column="51" lean-forward="true" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/async/handler/FollowHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="42" column="49" lean-forward="false" selection-start-line="42" selection-start-column="49" selection-end-line="42" selection-end-column="49" />
+        <state relative-caret-position="194">
+          <caret line="503" column="16" lean-forward="false" selection-start-line="503" selection-start-column="16" selection-end-line="503" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/discuss/DiscussCommentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/config/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/resources/conf/db.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270">
-          <caret line="38" column="69" lean-forward="false" selection-start-line="38" selection-start-column="69" selection-end-line="38" selection-end-column="69" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/discuss/DiscussQuestionController.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
-          <caret line="64" column="37" lean-forward="false" selection-start-line="64" selection-start-column="22" selection-end-line="64" selection-end-column="37" />
-          <folding />
+          <caret line="39" column="67" lean-forward="false" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="67" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page-pojo/src/main/java/cn/website/page/pojo/User.java">
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/feed/FeedController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="26" />
-          <folding />
+        <state relative-caret-position="167">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../website-common/src/main/java/cn/website/common/pojo/Constants.java">
+    <entry file="file://$PROJECT_DIR$/../website-page-pojo/src/main/java/cn/website/page/pojo/Feed.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="397">
+          <caret line="60" column="65" lean-forward="false" selection-start-line="60" selection-start-column="65" selection-end-line="60" selection-end-column="65" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/resources/mybatis/mapper/DiscussCommentMapper.xml">
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/feeds.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="35" lean-forward="false" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+        <state relative-caret-position="282">
+          <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/discuss/addQuestion.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="100" column="27" lean-forward="false" selection-start-line="100" selection-start-column="27" selection-end-line="100" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/follow/FollowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="109" column="9" lean-forward="false" selection-start-line="104" selection-start-column="8" selection-end-line="109" selection-end-column="9" />
           <folding>
-            <marker date="1525944546956" expanded="true" signature="255:397" ph="SELECT id,co... discuss_comment" />
-            <marker date="1525944546956" expanded="true" signature="699:902" ph="INSERT INTO discuss_comment... " />
-            <marker date="1525944546956" expanded="true" signature="989:1062" ph="UPDATE discuss_comment... " />
-            <marker date="1525944546956" expanded="true" signature="1175:1267" ph="UPDATE discuss_comment... " />
-            <marker date="1525944546956" expanded="true" signature="1404:1509" ph="SELECT count... discuss_comment" />
-            <marker date="1525944546956" expanded="true" signature="1829:1892" ph="select count... discuss_comment" />
+            <element signature="e#4600#4615#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../website-common/src/main/java/cn/website/common/plugins/PageData.java">
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/resources/SensitiveWords.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="58" column="21" lean-forward="false" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/BaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1175">
-          <caret line="111" column="17" lean-forward="false" selection-start-line="111" selection-start-column="17" selection-end-line="111" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://E:/maven/repository/org/springframework/spring-web/4.2.4.RELEASE/spring-web-4.2.4.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="132" column="0" lean-forward="false" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="92">
+          <caret line="4" column="3" lean-forward="false" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../website-common/src/main/java/cn/website/common/pojo/Code.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="52" />
-          <folding />
+        <state relative-caret-position="282">
+          <caret line="33" column="52" lean-forward="false" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/resources/mybatis/mapper/UserMapper.xml">
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/common/CommonController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="27" column="24" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/discuss/DiscussController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
-          <caret line="8" column="49" lean-forward="true" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
-          <folding>
-            <marker date="1525527197964" expanded="true" signature="242:345" ph="SELECT id,us... user" />
-            <marker date="1525527197964" expanded="true" signature="423:611" ph="insert into user... " />
-            <marker date="1525527197964" expanded="true" signature="1532:1555" ph="SELECT LAST_... " />
-          </folding>
+          <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/website/user/upload.js">
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/videodetail.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="37" column="9" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="37" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="2138">
+          <caret line="149" column="39" lean-forward="false" selection-start-line="149" selection-start-column="38" selection-end-line="149" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/login/LoginService.java">
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/resources/mybatis/mapper/VideoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" column="10" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/css/responsive5152.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="194">
-          <caret line="30" column="19" lean-forward="false" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
-          <folding />
+          <caret line="102" column="3" lean-forward="false" selection-start-line="102" selection-start-column="3" selection-end-line="102" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="62" column="58" lean-forward="false" selection-start-line="62" selection-start-column="58" selection-end-line="62" selection-end-column="58" />
+        <state relative-caret-position="1133">
+          <caret line="89" column="85" lean-forward="false" selection-start-line="87" selection-start-column="20" selection-end-line="89" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/video.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="713">
+          <caret line="52" column="65" lean-forward="false" selection-start-line="52" selection-start-column="65" selection-end-line="52" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/discuss.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="57" column="67" lean-forward="false" selection-start-line="52" selection-start-column="24" selection-end-line="57" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/index/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="49" column="37" lean-forward="false" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="37" />
           <folding>
-            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#2341#2353#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/js/website/upload.js">
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/video/VideoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="23" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="23" />
+        <state relative-caret-position="421">
+          <caret line="61" column="50" lean-forward="false" selection-start-line="60" selection-start-column="8" selection-end-line="61" selection-end-column="50" />
+          <folding>
+            <element signature="e#1500#1501#0" expanded="false" />
+            <element signature="e#1540#1541#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/discuss/DiscussQuestionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-761">
+          <caret line="45" column="51" lean-forward="false" selection-start-line="45" selection-start-column="51" selection-end-line="45" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/question.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1626">
-          <caret line="128" column="110" lean-forward="false" selection-start-line="128" selection-start-column="110" selection-end-line="128" selection-end-column="110" />
+        <state relative-caret-position="-412">
+          <caret line="104" column="56" lean-forward="false" selection-start-line="104" selection-start-column="56" selection-end-line="104" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/message.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="54" column="49" lean-forward="false" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/maven/repository/org/springframework/spring-web/4.2.4.RELEASE/spring-web-4.2.4.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="132" column="0" lean-forward="false" selection-start-line="132" selection-start-column="0" selection-end-line="132" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../website-page-pojo/src/main/java/cn/website/page/pojo/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/async/handler/LikeHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="35" column="62" lean-forward="false" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/async/handler/FollowHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="47" column="28" lean-forward="false" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-service/src/main/java/cn/website/service/async/handler/FeedHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1886">
+          <caret line="100" column="62" lean-forward="false" selection-start-line="100" selection-start-column="55" selection-end-line="100" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../website-common/src/main/java/cn/website/common/async/EventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="9" lean-forward="false" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/user/MessageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1771">
+          <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/login/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2323">
+          <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/header.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="50" column="48" lean-forward="false" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/video/UploadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="51" column="5" lean-forward="true" selection-start-line="48" selection-start-column="4" selection-end-line="51" selection-end-column="5" />
-          <folding>
-            <element signature="e#1884#1885#0" expanded="true" />
-            <element signature="e#1917#1918#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/login/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2023">
-          <caret line="108" column="50" lean-forward="false" selection-start-line="108" selection-start-column="50" selection-end-line="108" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#7422#7423#0" expanded="true" />
-            <element signature="e#7455#7456#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/java/cn/website/controller/upload/UploadController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        <state relative-caret-position="874">
+          <caret line="38" column="25" lean-forward="false" selection-start-line="36" selection-start-column="16" selection-end-line="38" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/register.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="116" column="14" lean-forward="false" selection-start-line="116" selection-start-column="14" selection-end-line="116" selection-end-column="14" />
+        <state relative-caret-position="2001">
+          <caret line="87" column="33" lean-forward="false" selection-start-line="87" selection-start-column="33" selection-end-line="87" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/messageDetail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2967">
+          <caret line="129" column="77" lean-forward="false" selection-start-line="129" selection-start-column="77" selection-end-line="129" selection-end-column="77" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/profile.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1541">
+          <caret line="67" column="102" lean-forward="false" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="106" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/follow/followers.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1955">
+          <caret line="796" column="114" lean-forward="false" selection-start-line="795" selection-start-column="44" selection-end-line="796" selection-end-column="114" />
           <folding>
-            <element signature="n#style#0;n#button#0;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#span#0;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1526206046138" expanded="false" signature="1444:49714" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../website-page/website-page-web/src/main/webapp/WEB-INF/jsp/follow/followees.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="36" column="63" lean-forward="false" selection-start-line="36" selection-start-column="63" selection-end-line="36" selection-end-column="63" />
+          <folding />
         </state>
       </provider>
     </entry>

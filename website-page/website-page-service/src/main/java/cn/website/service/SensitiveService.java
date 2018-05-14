@@ -21,7 +21,7 @@ public class SensitiveService implements InitializingBean {
     public void afterPropertiesSet() throws Exception {
         rootNode = new TrieNode();
         try {
-            String fileName = "E:\\code\\graduation\\website-page\\website-page-web\\src\\main\\resources\\SensitiveWords.txt";
+            String fileName = "E:\\code\\my\\website\\website-page\\website-page-web\\src\\main\\resources\\SensitiveWords.txt";
             BufferedReader bufferedReader=new BufferedReader(new InputStreamReader(new FileInputStream(fileName),"UTF-8"));
             String lineTxt;
             while ((lineTxt = bufferedReader.readLine()) != null) {

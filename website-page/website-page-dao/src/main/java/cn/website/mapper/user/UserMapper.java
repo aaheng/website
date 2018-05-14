@@ -21,4 +21,6 @@ public interface UserMapper {
 
 
     Integer updateUserStatus(Integer userId);
+
+    Integer editUser(User user);
 }

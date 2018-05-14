@@ -42,6 +42,7 @@ public class VideoController {
     public String toAddVideo() {
         return "/video/addVideo";
     }
+
     @RequestMapping("/detail/{id}")
     public String toVideoDetail(@PathVariable("id") Integer id,Model model) {
         List<FileEntity> video = videoService.getVideoById(id);

@@ -1,11 +1,15 @@
 package cn.website.controller.discuss;
 
+import cn.website.common.async.EventModel;
+import cn.website.common.async.EventProducer;
+import cn.website.common.async.EventType;
 import cn.website.common.pojo.Code;
 import cn.website.common.pojo.SResponse;
 import cn.website.page.pojo.*;
 import cn.website.service.discuss.DiscussCommentService;
 import cn.website.service.discuss.DiscussQuestionService;
 import cn.website.service.discuss.LikeService;
+import cn.website.service.follow.FollowService;
 import cn.website.service.user.UserService;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,12 +37,13 @@ public class DiscussQuestionController {
     private HostHolder hostHolder;
     @Autowired
     private LikeService likeService;
+    @Autowired
+    private FollowService followService;
 
     //获取问题列表
     @RequestMapping("/getQuestionList")
     public String getQuestionList(Model model) {
-        List<DiscussQuestion> questionList = discussQuestionService.getQuestionList();
-        model.addAttribute("questionList", questionList);
+        model.addAttribute("vos", getQuestions(0,0,10));
         return "discuss";
     }
 
@@ -47,6 +52,12 @@ public class DiscussQuestionController {
     @ResponseBody
     public SResponse insertQuestion(String title, String content) {
         SResponse response = new SResponse();
+        if (hostHolder.get() == null) {
+            response.setCode(Code.USER_UN_LOGIN_CODE);
+            response.setMsg(Code.USER_UN_LOGIN_MSG);
+            response.setResult("/discuss/getQuestionList");
+            return response;
+        }
         if (StringUtils.isBlank(title) || StringUtils.isBlank(content)) {
             //参数错误
             response.setCode(Code.PARAMS_ERROR_CODE);
@@ -55,6 +66,9 @@ public class DiscussQuestionController {
         }
         //调用service
         response = discussQuestionService.insertDiscussQuestion(title, content);
+        /*eventProducer.fireEvent(new EventModel().setType(EventType.ADD_QUESTION)
+                .setActorId(question.getUserId()).setEntityId(question.getId())
+                .setExt("title", question.getTitle()).setExt("content", question.getContent()));*/
         return response;
     }
 
@@ -88,6 +102,27 @@ public class DiscussQuestionController {
 
         model.addAttribute("question", question);
         model.addAttribute("vos", vos);
+
+        List<ViewObject> followUsers = new ArrayList<ViewObject>();
+        // 获取关注的用户信息
+        List<Integer> users = followService.getFollowers(EntityType.ENTITY_QUESTION, id, 20);
+        for (Integer userId : users) {
+            ViewObject vo = new ViewObject();
+            User u = userService.getUserById(userId);
+            if (u == null) {
+                continue;
+            }
+            vo.set("name", u.getUsername());
+            vo.set("headUrl", u.getHeadUrl());
+            vo.set("id", u.getId());
+            followUsers.add(vo);
+        }
+        model.addAttribute("followUsers", followUsers);
+        if (hostHolder.get() != null) {
+            model.addAttribute("followed", followService.isFollower(hostHolder.get().getId(), EntityType.ENTITY_QUESTION, id));
+        } else {
+            model.addAttribute("followed", false);
+        }
         return "question";
     }
 
@@ -97,4 +132,21 @@ public class DiscussQuestionController {
     }
 
 
+    public List<ViewObject> getQuestions(Integer userId, Integer index, Integer limit) {
+        //展示最新十条信息,以及用户信息
+        List<DiscussQuestion> questionList = discussQuestionService.getLatestQuestions(userId, index, limit);
+        //将每一条问答信息封装进map中
+        if (questionList != null && questionList.size() > 0) {
+            List<ViewObject> vos = new ArrayList<ViewObject>();
+            for (DiscussQuestion question : questionList) {
+                ViewObject viewObject = new ViewObject();
+                viewObject.set("question", question);
+                viewObject.set("user", userService.getUserById(question.getUser_id()));
+                viewObject.set("followCount", followService.getFollowerCount(EntityType.ENTITY_QUESTION, question.getId()));
+                vos.add(viewObject);
+            }
+            return vos;
+        }
+        return null;
+    }
 }

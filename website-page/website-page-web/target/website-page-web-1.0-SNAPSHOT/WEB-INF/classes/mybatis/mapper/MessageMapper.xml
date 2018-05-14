@@ -12,9 +12,18 @@
 	</insert>
 
 	<select id="getConversationList" parameterType="Integer" resultType="Message">
+		SELECT from_id,to_id,content,date_format(create_time,'%Y-%m-%d %H:%i:%s') as create_time,has_read,conversation_id,count(id) as id
+		FROM (select * from message where is_delete = 0 and from_id = #{userId} or to_id = #{userId} ORDER by create_time desc) tt group by conversation_id order by create_time desc
+	</select>
+
+	<select id="getConversationUnreadCount" resultType="Integer">
+		select count(id) from message where has_read = 0 and to_id = #{userId} and conversation_id=#{conversationId}
+	</select>
+
+	<select id="getConversationDetail" resultType="Message">
 		SELECT <include refid="selector"/>
-		FROM message
-		WHERE
+		from message
+		where conversation_id=#{conversationId} order by create_time desc limit #{offset}, #{limit}
 	</select>
 
 </mapper>

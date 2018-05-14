@@ -54,7 +54,7 @@
                     <div id="main-content" class="col-2-3">
                         <div class="wrap-vid">
                             <div class="zoom-container" style="padding-top: 0px;">
-                                <a href="/video/detail">
+                                <a href="javascript:void(0);">
                                     <video width="550" height="400" controls>
                                         <source src="/${video.path}" type="video/mp4">
                                     </video>
@@ -128,7 +128,7 @@
                             <div class="header">
                                 <h2>Comments</h2>
                             </div>
-                            <input id="videoId" type="hidden" value="${video.ID}">
+                            <input id="videoId" type="hidden" value="${video.id}">
                             <div class="row"><!--Start Box-->
                                 <div id="owl-demo-1" class="owl-carousel">
                                     <div class="layui-inline">

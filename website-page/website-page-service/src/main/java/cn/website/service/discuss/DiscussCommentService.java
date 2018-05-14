@@ -90,7 +90,7 @@ public class DiscussCommentService {
     }
 
     //获取用户的评论数
-    public int getUserCommentCount(int userId) {
-        return discussCommentMapper.getUserCommentCount(userId);
+    public Integer getDiscussCommentCountByUserId(Integer userId){
+        return discussCommentMapper.getDiscussCommentCountByUserId(userId);
     }
 }

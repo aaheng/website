@@ -3,7 +3,7 @@ function upLike(commentId) {
         function (data) {
             if (data.code == 999) {
                 //未登录
-                window.location.href = 'http://localhost:8080/toLogin';
+                window.location.href = 'http://localhost:8081/toLogin';
             } else if (data.code == 200) {
                 //更新点赞数量
                 /*$("#js-voteCount").html(data.result);
@@ -21,7 +21,7 @@ function downDislike(commentId) {
         function (data) {
             if (data.code == 999) {
                 //未登录
-                window.location.href = 'http://localhost:8080/toLogin';
+                window.location.href = 'http://localhost:8081/toLogin';
             } else if (data.code == 200) {
                 //更新点赞数量
                 /*$("#js-voteCount").html(data.result);

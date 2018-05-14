@@ -1,11 +1,13 @@
 package cn.website.controller.index;
 
 
+import cn.website.common.pojo.FileEntity;
 import cn.website.page.pojo.*;
 import cn.website.service.discuss.DiscussCommentService;
 import cn.website.service.discuss.DiscussQuestionService;
 import cn.website.service.follow.FollowService;
 import cn.website.service.user.UserService;
+import cn.website.service.video.VideoService;
 import org.aspectj.weaver.patterns.TypePatternQuestions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -36,11 +38,16 @@ public class IndexController {
     private DiscussCommentService discussCommentService;
     @Autowired
     private HostHolder hostHolder;
+    @Autowired
+    private VideoService videoService;
 
     @RequestMapping("/")
     public String discussIndex(Model model){
         //将封装完的Vos传到前台即可
         model.addAttribute("vos", getQuestions(0,0,10));
+        //获取视频信息
+        List<FileEntity> videoList = videoService.getVideoList(".mp4");
+        model.addAttribute("videoList",videoList);
         return "index";
     }
 
@@ -60,6 +67,7 @@ public class IndexController {
                 ViewObject viewObject = new ViewObject();
                 viewObject.set("question", question);
                 viewObject.set("user", userService.getUserById(question.getUser_id()));
+                viewObject.set("followCount", followService.getFollowerCount(EntityType.ENTITY_QUESTION, question.getId()));
                 vos.add(viewObject);
             }
             return vos;
@@ -68,13 +76,13 @@ public class IndexController {
     }
 
     @RequestMapping(path = {"/user/{userId}"}, method = {RequestMethod.GET, RequestMethod.POST})
-    public String userIndex(Model model, @PathVariable("userId") int userId) {
+    public String userIndex(Model model, @PathVariable("userId") Integer userId) {
         model.addAttribute("vos", getQuestions(userId, 0, 10));
 
         User user = userService.getUserById(userId);
         ViewObject vo = new ViewObject();
         vo.set("user", user);
-        vo.set("commentCount", discussCommentService.getUserCommentCount(userId));
+        vo.set("commentCount", discussCommentService.getDiscussCommentCountByUserId(userId));
         vo.set("followerCount", followService.getFollowerCount(EntityType.ENTITY_USER, userId));
         vo.set("followeeCount", followService.getFolloweeCount(userId, EntityType.ENTITY_USER));
         if (hostHolder.get() != null) {

@@ -18,6 +18,13 @@
     <%--<link rel="stylesheet" href="/css/addPopup.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/detail.css">--%>
+
+    <link rel="stylesheet" href="/css/index.css">
+    <style>
+        .zm-item-answer-author-info a.collapse {
+            margin-top: 0
+        }
+    </style>
 </head>
 <body>
 <div class="layui-layout layui-layout-admin">
@@ -43,12 +50,12 @@
             <form class="layui-form">
                 <div class="layui-form-item">
                     <div class="layui-input-block">
-                        <input type="text" name="" placeholder="Type your search terms here" autocomplete="off"
+                        <%--<input type="text" name="" placeholder="Type your search terms here" autocomplete="off"
                                class="layui-input"
                                style="height: 40px;width: 800px;margin-top: 10px"/>&nbsp;&nbsp;&nbsp;
                         <input class="layui-btn" type="submit" value="Search"
                                style="height: 40px;background-color: #3f4b55"/>
-                        <div id="search-error-container"></div>
+                        <div id="search-error-container"></div>--%>
                     </div>
 
                 </div>
@@ -58,7 +65,107 @@
     </div>
     <%--End of Search Wrapper--%>
     <!-- Start of Page Container -->
-    <div class="page-container">
+
+    <div class="zg-wrap zu-main clearfix " role="main">
+        <div class="zu-main-content">
+            <div class="zu-main-content-inner">
+                <div class="zg-section" id="zh-home-list-title">
+                    <i class="zg-icon zg-icon-feedlist"></i>最新问题
+                    <input type="hidden" id="is-topstory">
+                    <span class="zg-right zm-noti-cleaner-setting" style="list-style:none">
+                        <a href="https://nowcoder.com/settings/filter" class="zg-link-gray-normal">
+                            <i class="zg-icon zg-icon-settings"></i>设置</a></span>
+                </div>
+                <div class="zu-main-feed-con navigable" data-feedtype="topstory" id="zh-question-list"
+                     data-widget="navigable"
+                     data-navigable-options="{&quot;items&quot;:&quot;&gt; .zh-general-list .feed-content&quot;,&quot;offsetTop&quot;:-82}">
+                    <a href="javascript:;" class="zu-main-feed-fresh-button" id="zh-main-feed-fresh-button"
+                       style="display:none"></a>
+                    <div id="js-home-feed-list" class="zh-general-list topstory clearfix">
+                        <c:forEach items="${vos}" var="vo">
+                            <div class="feed-item folding feed-item-hook feed-item-1">
+
+                                <div class="feed-item-inner">
+                                    <div class="avatar">
+                                        <a title="赵永峰" data-tip="p$t$zhao-yong-feng" class="zm-item-link-avatar"
+                                           target="_blank"
+                                           href="/user/${vo.get('user').id}">
+                                            <img src="${vo.get('user').headUrl}"
+                                                 class="zm-item-img-avatar"></a>
+                                    </div>
+                                    <div class="feed-main">
+                                        <div class="feed-content" data-za-module="PostItem">
+                                            <meta itemprop="post-id" content="113477">
+                                            <meta itemprop="post-url-token" content="19831487">
+                                            <div class="author-info">
+                                                <a href="/user/${vo.get("user").id}"
+                                                   data-tip="p$t$zhao-yong-feng"
+                                                   class="name">${vo.get("user").username}</a>
+                                            </div>
+                                            <h5 class="feed-title">
+                                                <a target="_blank" class="post-link"
+                                                   href="/discuss/question/detail/${vo.get('question').id}">${vo.get('question').title}</a>
+                                            </h5>
+                                            <div class="entry-body post-body js-collapse-body">
+                                                <div class="zm-item-vote">
+                                                    <a class="zm-item-vote-count js-expand js-vote-count" href="#"
+                                                       data-bind-votecount="">${vo.get("followCount")}</a></div>
+                                                <div class="zm-votebar" data-za-module="VoteBar">
+                                                    <button class="up" aria-pressed="false" title="赞同">
+                                                        <i class="icon vote-arrow"></i>
+                                                        <span class="count">${vo.get("followCount")}</span>
+                                                        <span class="label sr-only">赞同</span></button>
+                                                </div>
+                                                <div class="zm-item-vote-info" data-votecount="1082"
+                                                     data-za-module="VoteInfo">
+                                                <span class="voters text">
+                                                    <a href="#" class="more text">
+                                                        <span class="js-voteCount">${vo.get("followCount")}</span>&nbsp;人赞</a></span>
+                                                </div>
+                                                <div class="post-content">
+                                                    <div class="zh-summary summary clearfix">
+                                                            ${vo.get("question").content}
+                                                    </div>
+                                                    <p>
+                                                        <a class="post-link entry-link" target="_blank"
+                                                           href="javascript:void(0);">
+                                                                ${vo.get('question').create_time}
+                                                        </a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="feed-meta">
+                                                <div class="zm-item-meta meta clearfix js-contentActions">
+                                                    <div class="zm-meta-panel">
+                                                        <a data-follow="c:link" class="zg-follow meta-item" href="#"
+                                                           id="cl-2180">
+
+                                                            <a href="/discuss/question/detail/${vo.get('question').id}"
+                                                               class="meta-item toggle-comment js-toggleCommentBox">
+                                                                <i class="z-icon-comment"></i>${vo.get('question').comment_count}
+                                                                条评论</a>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="undo-dislike-options" data-item_id="1">此内容将不会在动态中再次显示
+                                    <span class="zg-bull">•</span>
+                                    <a href="#" class="meta-item revert">撤销</a>
+                                    <a href="#" class="ignore zu-autohide close"></a>
+                                </div>
+                            </div>
+                        </c:forEach>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <%--<div class="page-container">
         <div class="container">
             <div class="row">
                 <!-- start of page content -->
@@ -158,7 +265,7 @@
                 <!-- end of sidebar -->
             </div>
         </div>
-    </div>
+    </div>--%>
     <!-- End of Page Container -->
 
     <!-- Start of Footer -->
@@ -302,31 +409,41 @@
 <script type="text/javascript">
     $(document).ready(function () {
         $("#addQuestion").click(function () {
-            layui.use(['layer'], function () {
-                var layer = layui.layer;
-                layerIndex = layer.open({
-                    title: "提问",
-                    type:2,
-                    content: "/discuss/toAddQuestion",
-                    maxmin: false,
-                    resize: false,
-                    offset: '5%',
-                    area: ["700px", "400px"]
+            function uploadVideo() {
+                $.post("/common/checkLogin", function (data) {
+                    if (data.code == 999) {
+                        //未登录
+                        $(location).attr('href', 'http://localhost:8081/toLogin?callback=/discuss/index');
+                    }else if (data.code == 888){
+                        layui.use(['layer'], function () {
+                            var layer = layui.layer;
+                            layerIndex = layer.open({
+                                title: "提问",
+                                type: 2,
+                                content: "/discuss/toAddQuestion",
+                                maxmin: false,
+                                resize: false,
+                                offset: '5%',
+                                area: ["700px", "400px"]
+                            });
+                        });
+                    }
                 });
-            });
+
+            }
         });
     });
 </script>
 <script>
-        layui.use('element', function () {
-            var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
+    layui.use('element', function () {
+        var element = layui.element; //导航的hover效果、二级菜单等功能，需要依赖element模块
 
-            //监听导航点击
-            element.on('nav(demo)', function (elem) {
-                //console.log(elem)
-                layer.msg(elem.text());
-            });
+        //监听导航点击
+        element.on('nav(demo)', function (elem) {
+            //console.log(elem)
+            layer.msg(elem.text());
         });
-    </script>
+    });
+</script>
 </body>
 </html>

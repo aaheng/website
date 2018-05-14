@@ -10,6 +10,7 @@
         <include refid="selector"></include>
         FROM file t
         WHERE t.type = #{type}
+        order by upload_time DESC
     </select>
 
     <select id="getVideoById" resultType="cn.website.common.pojo.FileEntity" parameterType="Integer">

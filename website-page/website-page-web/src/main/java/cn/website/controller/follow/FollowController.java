@@ -52,6 +52,7 @@ public class FollowController {
         if (hostHolder.get() == null) {
             resp.setCode(Code.USER_UN_LOGIN_CODE);
             resp.setMsg(Code.USER_UN_LOGIN_MSG);
+            resp.setResult("/user/"+userId);
             return resp;
         }
 
@@ -66,6 +67,8 @@ public class FollowController {
         result.put("result",ret ? 0 : 1);
         result.put("fCount",String.valueOf(followService.getFolloweeCount(hostHolder.get().getId(), EntityType.ENTITY_USER)));
         resp.setResult(result);
+        resp.setCode(Code.SUCCESS_CODE);
+        resp.setMsg(Code.SUCCESS_MSG);
         return resp;
     }
 
@@ -90,6 +93,8 @@ public class FollowController {
         result.put("result",ret ? 0 : 1);
         result.put("fCount",String.valueOf(followService.getFolloweeCount(hostHolder.get().getId(), EntityType.ENTITY_USER)));
         resp.setResult(result);
+        resp.setCode(Code.SUCCESS_CODE);
+        resp.setMsg(Code.SUCCESS_MSG);
         return resp;
     }
 
@@ -100,6 +105,7 @@ public class FollowController {
         if (hostHolder.get() == null) {
             resp.setCode(Code.USER_UN_LOGIN_CODE);
             resp.setMsg(Code.USER_UN_LOGIN_MSG);
+            resp.setResult("/discuss/question/detail/"+questionId);
             return resp;
         }
         DiscussQuestion q = questionService.getDiscussQuestionById(questionId);
@@ -200,7 +206,7 @@ public class FollowController {
             }
             ViewObject vo = new ViewObject();
             vo.set("user", user);
-            vo.set("commentCount", discussCommentService.getUserCommentCount(uid));
+            vo.set("commentCount", discussCommentService.getDiscussCommentCountByUserId(uid));
             vo.set("followerCount", followService.getFollowerCount(EntityType.ENTITY_USER, uid));
             vo.set("followeeCount", followService.getFolloweeCount(uid, EntityType.ENTITY_USER));
             if (localUserId != 0) {
