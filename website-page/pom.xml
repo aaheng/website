@@ -18,6 +18,7 @@
         <module>website-page-dao</module>
         <module>website-page-web</module>
         <module>website-page-service</module>
+        <module>added-line</module>
     </modules>
     <dependencies>
         <dependency>
